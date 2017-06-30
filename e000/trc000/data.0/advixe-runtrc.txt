@@ -1,8 +1,0 @@
-
-=== Start: [2017/06/30 15:37:26] === 
-Analysis started...
-Result file: /home/AstroVPK/Documents/lu_knl/e000/trc000/trc000.advixe 
-Application exit code: 0 
-Result file: /home/AstroVPK/Documents/lu_knl/e000/trc000/trc000.advixe 
-Analysis completed
-=== End: [2017/06/30 15:38:07] === 
