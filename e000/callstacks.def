@@ -1,494 +1,492 @@
 # callstacks file version: 2
 #    rowid |    parent |       rva | loop | system |                                function | binary | instance rva
          1 |        -1 |      4992 |    0 |      0 |                                  _start | /home/AstroVPK/code/lu/luDecomp | 4992
-         2 |        -1 |         0 |    0 |      0 |                [Unknown stack frame(s)] | n/a | 0
+         2 |        -1 |    137408 |    0 |      1 |              [Import thunk ___kmp_free] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 137408
          3 |        -1 |      5032 |    0 |      0 |                                  _start | /home/AstroVPK/code/lu/luDecomp | 4992
-         4 |       148 |    138036 |    1 |      1 |     [Loop@0x21a79 in __libc_start_main] | /lib64/libc.so.6 | 137849
-         5 |       347 |      5487 |    1 |      0 |              [Loop at line 635 in main] | /home/AstroVPK/code/lu/luDecomp | 5432
+         4 |       143 |    138036 |    1 |      1 |     [Loop@0x21a79 in __libc_start_main] | /lib64/libc.so.6 | 137849
+         5 |       318 |      5487 |    1 |      0 |              [Loop at line 635 in main] | /home/AstroVPK/code/lu/luDecomp | 5432
          6 |         5 |    376361 |    0 |      1 |                           [OpenMP fork] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 376080
-         7 |       151 |    547351 |    1 |      1 |  [Loop at line 1801 in __kmp_fork_call] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 544141
-         8 |       153 |    553638 |    1 |      1 |[Loop at line 5137 in __kmp_allocate_team] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 553625
+         7 |       146 |    547351 |    1 |      1 |  [Loop at line 1801 in __kmp_fork_call] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 544141
+         8 |       148 |    553638 |    1 |      1 |[Loop at line 5137 in __kmp_allocate_team] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 553625
          9 |         8 |    533880 |    0 |      1 |                   __kmp_allocate_thread | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 532000
         10 |         9 |    743880 |    0 |      1 |                     __kmp_create_worker | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 743040
         11 |        10 |   4046546 |    0 |      1 |           tpss_pthread_create_mod1_ver0 | /opt/intel/advisor_2017.1.3.510716/lib64/libtpsstool.so | 4043664
         12 |        11 |     35076 |    0 |      1 |                          pthread_create | /lib64/libpthread.so.0 | 32832
-        13 |         9 |    743485 |    0 |      1 |                     __kmp_create_worker | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 743040
-        14 |        11 |     33896 |    0 |      1 |                          pthread_create | /lib64/libpthread.so.0 | 32832
-        15 |        14 |     28537 |    0 |      1 |                    do_clone.constprop.4 | /lib64/libpthread.so.0 | 28464
-        16 |        15 |   1013551 |    0 |      1 |                                 __clone | /lib64/libc.so.6 | 1013504
-        17 |       155 |    534270 |    0 |      1 |_INTERNAL_25_______src_kmp_runtime_cpp_fa8d4e2e::__kmp_initialize_info | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 533220
-        18 |        17 |    245064 |    0 |      1 |                         ___kmp_allocate | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 245040
-        19 |        18 |   1019427 |    0 |      1 |                 scalable_aligned_malloc | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 1019360
-        20 |         5 |    376386 |    0 |      1 |                           [OpenMP fork] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 376080
-        21 |        20 |    558757 |    0 |      1 |                         __kmp_join_call | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 558560
-        22 |        21 |    560817 |    0 |      1 |                     __kmp_internal_join | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 560752
-        23 |       157 |    363029 |    1 |      1 |[Loop at line 1950 in __kmp_join_barrier] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 361564
-        24 |       163 |    348925 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348149
-        25 |       163 |    348953 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348149
-        26 |       163 |    348804 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348149
-        27 |       163 |    348801 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348149
-        28 |        27 |    740928 |    0 |      1 |                             __kmp_yield | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 740928
-        29 |       163 |    348854 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348149
-        30 |       174 |    348792 |    0 |      1 |                         __kmp_x86_pause | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348792
-        31 |       179 |    545711 |    0 |      1 |_INTERNAL_25_______src_kmp_runtime_cpp_fa8d4e2e::__kmp_itt_stack_caller_create | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 545710
-        32 |        31 |   3148178 |    0 |      1 |tpss___itt_stack_caller_create_mod0_ver0 | /opt/intel/advisor_2017.1.3.510716/lib64/libtpsstool.so | 3146704
-        33 |        32 |   5338495 |    0 |      1 |                           func@0x517500 | /opt/intel/advisor_2017.1.3.510716/lib64/libtpsstool.so | 5338368
-        34 |       352 |      6240 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6212
-        35 |       362 |      6475 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6464
-        36 |       372 |      6360 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
-        37 |       381 |      6524 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6464
-        38 |       390 |      6397 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
-        39 |       399 |      6336 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
-        40 |       408 |      6346 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
-        41 |         4 |      8379 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5232
-        42 |       420 |      9836 |    1 |      0 |      [Loop at line 553 in VerifyResult] | /home/AstroVPK/code/lu/luDecomp | 9760
-        43 |       426 |      6223 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6212
-        44 |       435 |      6407 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
-        45 |       350 |      6419 |    1 |      0 | [Loop at line 335 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6115
-        46 |       446 |      6267 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6212
-        47 |       350 |      6207 |    1 |      0 | [Loop at line 335 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6115
-        48 |       457 |      6370 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
-        49 |       466 |      6471 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6464
-        50 |       350 |      6160 |    1 |      0 | [Loop at line 335 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6115
-        51 |       350 |      6459 |    1 |      0 | [Loop at line 335 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6115
-        52 |       350 |      6276 |    1 |      0 | [Loop at line 335 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6115
-        53 |       350 |      6137 |    1 |      0 | [Loop at line 335 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6115
-        54 |       350 |      6152 |    1 |      0 | [Loop at line 335 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6115
-        55 |       350 |      6551 |    1 |      0 | [Loop at line 335 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6115
-        56 |        -1 |    741040 |    0 |      1 |_INTERNAL_26_______src_z_Linux_util_cpp_313effc4::[OpenMP worker] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 741040
-        57 |        -1 |   1013612 |    0 |      1 |                                 __clone | /lib64/libc.so.6 | 1013504
-        58 |       490 |     32196 |    1 |      1 |           [Loop@0x7db3 in start_thread] | /lib64/libpthread.so.0 | 32179
-        59 |        58 |   2852062 |    0 |      1 |       tpss_thread_start_routine_wrapper | /opt/intel/advisor_2017.1.3.510716/lib64/libtpsstool.so | 2851200
-        60 |       182 |    741682 |    1 |      1 |[Loop at line 578 in _INTERNAL_26_______src_z_Linux_util_cpp_313effc4::[OpenMP worker]] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 741597
-        61 |       184 |    538911 |    1 |      1 |[Loop at line 5659 in __kmp_launch_thread] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 538900
-        62 |        61 |    366752 |    0 |      1 |                      __kmp_fork_barrier | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 366240
-        63 |       188 |    360241 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
-        64 |       188 |    360340 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
-        65 |       188 |    360382 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
-        66 |       188 |    360350 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
-        67 |       188 |    360286 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
-        68 |       188 |    360686 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
-        69 |       188 |    360490 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
-        70 |       188 |    360475 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
-        71 |       188 |    360477 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
-        72 |       188 |    360680 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
-        73 |       209 |    360573 |    0 |      1 |kmp_basic_flag<unsigned long long>::notdone_check | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360570
-        74 |       188 |    360409 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
-        75 |       188 |    360289 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
-        76 |       188 |    360347 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
-        77 |        76 |    741031 |    0 |      1 |                             __kmp_yield | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 740928
-        78 |       188 |    360387 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
-        79 |       220 |    360348 |    0 |      1 |                         __kmp_x86_pause | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360348
-        80 |       188 |    360684 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
-        81 |       188 |    360406 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
-        82 |       188 |    360343 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
-        83 |       188 |    360482 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
-        84 |       188 |    360494 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
-        85 |       188 |    360670 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
-        86 |       188 |    360469 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
-        87 |       188 |    360327 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
-        88 |        76 |    740928 |    0 |      1 |                             __kmp_yield | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 740928
-        89 |       188 |    360332 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
-        90 |       188 |    360480 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
-        91 |       188 |    360488 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
-        92 |       188 |    360390 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
-        93 |       188 |    360397 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
-        94 |       188 |    360244 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
-        95 |       209 |    360570 |    0 |      1 |kmp_basic_flag<unsigned long long>::notdone_check | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360570
-        96 |       188 |    360330 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
-        97 |       188 |    360283 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
-        98 |        76 |    740930 |    0 |      1 |                             __kmp_yield | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 740928
-        99 |       188 |    360497 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
-       100 |       259 |    360565 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
-       101 |       188 |    360378 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
-       102 |       188 |    360256 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
-       103 |       188 |    360354 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
-       104 |       267 |    360338 |    0 |      1 |                         __kmp_x86_pause | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360338
-       105 |       188 |    360486 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
-       106 |       188 |    360500 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
-       107 |       188 |    360462 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
-       108 |       188 |    360676 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
-       109 |       188 |    360403 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
-       110 |       188 |    360246 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
-       111 |       188 |    360276 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
-       112 |       209 |    360578 |    0 |      1 |kmp_basic_flag<unsigned long long>::notdone_check | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360570
-       113 |       188 |    360320 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
-       114 |       188 |    360678 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
-       115 |       188 |    360696 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
-       116 |       188 |    360401 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
-       117 |        31 |         3 |    0 |      0 |                    [Stitch point frame] | n/a | 0
-       118 |       117 |    541526 |    0 |      1 |                     [OpenMP dispatcher] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 541392
-       119 |       118 |    740434 |    0 |      1 |                  __kmp_invoke_microtask | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 740288
-       120 |       488 |      7172 |    1 |      0 |[Loop at line 640 in main$omp$parallel_for@637] | /home/AstroVPK/code/lu/luDecomp | 7152
-       121 |       188 |    360234 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
-       122 |       184 |    539127 |    1 |      1 |[Loop at line 5659 in __kmp_launch_thread] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 538900
-       123 |       297 |    363029 |    1 |      1 |[Loop at line 1950 in __kmp_join_barrier] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 361564
-       124 |       303 |    348953 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348149
-       125 |       188 |    360253 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
-       126 |       303 |    348932 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348149
-       127 |       310 |    348802 |    0 |      1 |                         __kmp_x86_pause | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348802
-       128 |       303 |    348695 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348149
-       129 |       315 |    541483 |    0 |      1 |_INTERNAL_25_______src_kmp_runtime_cpp_fa8d4e2e::__kmp_itt_stack_callee_enter | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 541459
-       130 |       129 |   1668029 |    0 |      1 | tpss___itt_stack_callee_enter_mod0_ver0 | /opt/intel/advisor_2017.1.3.510716/lib64/libtpsstool.so | 1667712
-       131 |       130 |   5338495 |    0 |      1 |                           func@0x517500 | /opt/intel/advisor_2017.1.3.510716/lib64/libtpsstool.so | 5338368
-       132 |       122 |    361484 |    0 |      1 |                      __kmp_join_barrier | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 361408
-       133 |       303 |    348783 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348149
-       134 |       303 |    348801 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348149
-       135 |       134 |    740928 |    0 |      1 |                             __kmp_yield | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 740928
-       136 |       303 |    348808 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348149
-       137 |       303 |    348804 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348149
+        13 |        11 |     33896 |    0 |      1 |                          pthread_create | /lib64/libpthread.so.0 | 32832
+        14 |        13 |     28537 |    0 |      1 |                    do_clone.constprop.4 | /lib64/libpthread.so.0 | 28464
+        15 |        14 |   1013553 |    0 |      1 |                                 __clone | /lib64/libc.so.6 | 1013504
+        16 |        11 |     35047 |    0 |      1 |                          pthread_create | /lib64/libpthread.so.0 | 32832
+        17 |        16 |    990666 |    0 |      1 |                                    mmap | /lib64/libc.so.6 | 990608
+        18 |        10 |   4046842 |    0 |      1 |           tpss_pthread_create_mod1_ver0 | /opt/intel/advisor_2017.1.3.510716/lib64/libtpsstool.so | 4043664
+        19 |        18 |   5338495 |    0 |      1 |                           func@0x517500 | /opt/intel/advisor_2017.1.3.510716/lib64/libtpsstool.so | 5338368
+        20 |         7 |         0 |    0 |      0 |                [Unknown stack frame(s)] | n/a | 0
+        21 |       150 |   1131249 |    1 |      1 |[Loop@0x1142f1 in __intel_avx_rep_memset] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 1131249
+        22 |        10 |   4043832 |    0 |      1 |           tpss_pthread_create_mod1_ver0 | /opt/intel/advisor_2017.1.3.510716/lib64/libtpsstool.so | 4043664
+        23 |        22 |    138640 |    0 |      1 |                        __errno_location | /lib64/libc.so.6 | 138640
+        24 |         5 |    376386 |    0 |      1 |                           [OpenMP fork] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 376080
+        25 |        24 |    558757 |    0 |      1 |                         __kmp_join_call | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 558560
+        26 |        25 |    560817 |    0 |      1 |                     __kmp_internal_join | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 560752
+        27 |       152 |    363029 |    1 |      1 |[Loop at line 1950 in __kmp_join_barrier] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 361564
+        28 |       158 |    348957 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348149
+        29 |       158 |    348804 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348149
+        30 |       158 |    348953 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348149
+        31 |       158 |    349139 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348149
+        32 |       158 |    348794 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348149
+        33 |       171 |    545711 |    0 |      1 |_INTERNAL_25_______src_kmp_runtime_cpp_fa8d4e2e::__kmp_itt_stack_caller_create | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 545710
+        34 |        33 |   3148178 |    0 |      1 |tpss___itt_stack_caller_create_mod0_ver0 | /opt/intel/advisor_2017.1.3.510716/lib64/libtpsstool.so | 3146704
+        35 |        34 |   5338495 |    0 |      1 |                           func@0x517500 | /opt/intel/advisor_2017.1.3.510716/lib64/libtpsstool.so | 5338368
+        36 |       158 |    348808 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348149
+        37 |       321 |      6295 |    1 |      0 | [Loop at line 335 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6115
+        38 |       325 |      6397 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
+        39 |       338 |      6240 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6212
+        40 |       350 |      6346 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
+        41 |       321 |      6437 |    1 |      0 | [Loop at line 335 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6115
+        42 |       364 |      6360 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
+        43 |       321 |      6293 |    1 |      0 | [Loop at line 335 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6115
+        44 |       378 |      6387 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
+        45 |       390 |      6407 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
+        46 |         4 |      8379 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5232
+        47 |       405 |      9820 |    1 |      0 |      [Loop at line 553 in VerifyResult] | /home/AstroVPK/code/lu/luDecomp | 9760
+        48 |       413 |      6513 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6464
+        49 |       425 |      6414 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
+        50 |       321 |      6419 |    1 |      0 | [Loop at line 335 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6115
+        51 |       439 |      6417 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
+        52 |       451 |      6503 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6464
+        53 |       321 |      6152 |    1 |      0 | [Loop at line 335 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6115
+        54 |       321 |      6198 |    1 |      0 | [Loop at line 335 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6115
+        55 |       467 |      6350 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
+        56 |       321 |      6298 |    1 |      0 | [Loop at line 335 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6115
+        57 |       321 |      6279 |    1 |      0 | [Loop at line 335 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6115
+        58 |        -1 |    741040 |    0 |      1 |_INTERNAL_26_______src_z_Linux_util_cpp_313effc4::[OpenMP worker] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 741040
+        59 |        -1 |   1013612 |    0 |      1 |                                 __clone | /lib64/libc.so.6 | 1013504
+        60 |       488 |     32196 |    1 |      1 |           [Loop@0x7db3 in start_thread] | /lib64/libpthread.so.0 | 32179
+        61 |        60 |   2852062 |    0 |      1 |       tpss_thread_start_routine_wrapper | /opt/intel/advisor_2017.1.3.510716/lib64/libtpsstool.so | 2851200
+        62 |       176 |    741682 |    1 |      1 |[Loop at line 578 in _INTERNAL_26_______src_z_Linux_util_cpp_313effc4::[OpenMP worker]] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 741597
+        63 |       178 |    538911 |    1 |      1 |[Loop at line 5659 in __kmp_launch_thread] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 538900
+        64 |        63 |    366752 |    0 |      1 |                      __kmp_fork_barrier | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 366240
+        65 |       182 |    360350 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
+        66 |       182 |    360340 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
+        67 |       182 |    360409 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
+        68 |       182 |    360676 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
+        69 |       182 |    360343 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
+        70 |       182 |    360490 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
+        71 |       182 |    360403 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
+        72 |       182 |    360482 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
+        73 |       182 |    360256 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
+        74 |       182 |    360244 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
+        75 |       182 |    360241 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
+        76 |       182 |    360480 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
+        77 |       182 |    360469 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
+        78 |       182 |    360397 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
+        79 |       182 |    360696 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
+        80 |       213 |    360338 |    0 |      1 |                         __kmp_x86_pause | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360338
+        81 |       182 |    360475 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
+        82 |       182 |    360486 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
+        83 |       182 |    360332 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
+        84 |       182 |    360390 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
+        85 |       224 |    360573 |    0 |      1 |kmp_basic_flag<unsigned long long>::notdone_check | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360570
+        86 |       182 |    360354 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
+        87 |       182 |    360327 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
+        88 |       182 |    360283 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
+        89 |       182 |    360347 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
+        90 |        89 |    740930 |    0 |      1 |                             __kmp_yield | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 740928
+        91 |       235 |    360348 |    0 |      1 |                         __kmp_x86_pause | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360348
+        92 |       182 |    360477 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
+        93 |       182 |    360684 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
+        94 |       224 |    360570 |    0 |      1 |kmp_basic_flag<unsigned long long>::notdone_check | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360570
+        95 |       182 |    360286 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
+        96 |       182 |    360330 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
+        97 |       182 |    360401 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
+        98 |       182 |    360488 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
+        99 |       182 |    360500 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
+       100 |       182 |    360406 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
+       101 |       182 |    360382 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
+       102 |       182 |    360253 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
+       103 |       182 |    360289 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
+       104 |        89 |    741031 |    0 |      1 |                             __kmp_yield | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 740928
+       105 |       182 |    360378 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
+       106 |       182 |    360678 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
+       107 |       182 |    360497 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
+       108 |       182 |    360246 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
+       109 |       182 |    360320 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
+       110 |        89 |    740928 |    0 |      1 |                             __kmp_yield | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 740928
+       111 |       272 |    360565 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
+       112 |       182 |    360686 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
+       113 |       182 |    360387 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
+       114 |       224 |    360578 |    0 |      1 |kmp_basic_flag<unsigned long long>::notdone_check | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360570
+       115 |       182 |    360462 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
+       116 |       182 |    360234 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
+       117 |       182 |    360494 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
+       118 |       182 |    360680 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
+       119 |       182 |    360276 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
+       120 |       178 |    539127 |    1 |      1 |[Loop at line 5659 in __kmp_launch_thread] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 538900
+       121 |       291 |    363029 |    1 |      1 |[Loop at line 1950 in __kmp_join_barrier] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 361564
+       122 |       295 |    349032 |    1 |      1 |[Loop at line 792 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348685
+       123 |       182 |    360670 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
+       124 |        33 |         3 |    0 |      0 |                    [Stitch point frame] | n/a | 0
+       125 |       124 |    541526 |    0 |      1 |                     [OpenMP dispatcher] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 541392
+       126 |       125 |    740434 |    0 |      1 |                  __kmp_invoke_microtask | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 740288
+       127 |       484 |      7172 |    1 |      0 |[Loop at line 640 in main$omp$parallel_for@637] | /home/AstroVPK/code/lu/luDecomp | 7152
+       128 |       303 |    348953 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348149
+       129 |       484 |      7180 |    1 |      0 |[Loop at line 640 in main$omp$parallel_for@637] | /home/AstroVPK/code/lu/luDecomp | 7152
+       130 |       483 |      7082 |    1 |      0 |[Loop at line 638 in main$omp$parallel_for@637] | /home/AstroVPK/code/lu/luDecomp | 7061
+       131 |       126 |      7012 |    0 |      0 |               main$omp$parallel_for@637 | /home/AstroVPK/code/lu/luDecomp | 6839
+       132 |        64 |    359643 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
+       133 |       132 |    711038 |    0 |      1 |                __kmp_init_implicit_task | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 710960
+       134 |        64 |    359055 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
+       135 |        64 |    359639 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
+       136 |       303 |    348804 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348149
+       137 |       303 |    349147 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348149
        138 |       303 |    348865 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348149
-       139 |       303 |    348740 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348149
-       140 |       303 |    348772 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348149
-       141 |       303 |    348832 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348149
-       142 |       303 |    348737 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348149
-       143 |       303 |    349131 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348149
-       144 |       303 |    348797 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348149
-       145 |       303 |    348794 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348149
-       146 |       343 |    349032 |    1 |      1 |[Loop at line 792 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348685
-       147 |       303 |    348945 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348149
-       148 |         3 |    137849 |    0 |      1 |                       __libc_start_main | /lib64/libc.so.6 | 137792
-       149 |         3 |    138036 |    0 |      1 |                       __libc_start_main | /lib64/libc.so.6 | 137792
-       150 |         6 |    542492 |    0 |      1 |                         __kmp_fork_call | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 541920
-       151 |       150 |    544141 |    1 |      1 |  [Loop at line 1827 in __kmp_fork_call] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 542492
-       152 |         6 |    547351 |    0 |      1 |                         __kmp_fork_call | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 541920
-       153 |         7 |    553625 |    0 |      1 |                     __kmp_allocate_team | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 550000
-       154 |         7 |    553638 |    0 |      1 |                     __kmp_allocate_team | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 550000
-       155 |         8 |    533220 |    0 |      1 |                   __kmp_allocate_thread | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 532000
-       156 |         8 |    534270 |    0 |      1 |                   __kmp_allocate_thread | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 532000
-       157 |        22 |    361564 |    0 |      1 |                      __kmp_join_barrier | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 361408
-       158 |        22 |    363029 |    0 |      1 |                      __kmp_join_barrier | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 361408
-       159 |        23 |    347961 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 347760
-       160 |       159 |    348117 |    1 |      1 |[Loop at line 746 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 347961
-       161 |       160 |    348685 |    1 |      1 |[Loop at line 774 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348117
-       162 |       161 |    348149 |    1 |      1 |[Loop at line 792 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348685
-       163 |       162 |    348149 |    0 |      1 |                       kmp_flag_64::wait | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348149
-       164 |       161 |    348925 |    1 |      1 |[Loop at line 792 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348685
-       165 |        23 |    348925 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 347760
-       166 |       161 |    348953 |    1 |      1 |[Loop at line 792 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348685
-       167 |        23 |    348953 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 347760
-       168 |       161 |    348804 |    1 |      1 |[Loop at line 792 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348685
-       169 |        23 |    348804 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 347760
-       170 |       161 |    348801 |    1 |      1 |[Loop at line 792 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348685
-       171 |        23 |    348801 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 347760
-       172 |       161 |    348854 |    1 |      1 |[Loop at line 792 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348685
-       173 |        23 |    348854 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 347760
-       174 |       163 |    348792 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348149
-       175 |       161 |    348792 |    1 |      1 |[Loop at line 792 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348685
-       176 |        23 |    348792 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 347760
-       177 |         6 |    542492 |    0 |      1 |                         __kmp_fork_call | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 541920
-       178 |       177 |    544141 |    1 |      1 |  [Loop at line 1827 in __kmp_fork_call] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 542492
-       179 |       178 |    545710 |    1 |      1 |  [Loop at line 1801 in __kmp_fork_call] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 544141
-       180 |       178 |    545711 |    1 |      1 |  [Loop at line 1801 in __kmp_fork_call] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 544141
-       181 |         6 |    545711 |    0 |      1 |                         __kmp_fork_call | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 541920
-       182 |        59 |    741597 |    0 |      1 |_INTERNAL_26_______src_z_Linux_util_cpp_313effc4::[OpenMP worker] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 741040
-       183 |        59 |    741682 |    0 |      1 |_INTERNAL_26_______src_z_Linux_util_cpp_313effc4::[OpenMP worker] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 741040
-       184 |        60 |    538900 |    0 |      1 |                     __kmp_launch_thread | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 538832
-       185 |        60 |    538911 |    0 |      1 |                     __kmp_launch_thread | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 538832
-       186 |        62 |    360234 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
-       187 |       186 |    358829 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
-       188 |       187 |    358829 |    0 |      1 |                       kmp_flag_64::wait | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
-       189 |       186 |    360241 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
-       190 |        62 |    360241 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
-       191 |       186 |    360340 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
-       192 |        62 |    360340 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
-       193 |       186 |    360382 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
-       194 |        62 |    360382 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
-       195 |       186 |    360350 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
-       196 |        62 |    360350 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
-       197 |       186 |    360286 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
-       198 |        62 |    360286 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
-       199 |       186 |    360686 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
-       200 |        62 |    360686 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
-       201 |       186 |    360490 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
-       202 |        62 |    360490 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
-       203 |       186 |    360475 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
-       204 |        62 |    360475 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
-       205 |       186 |    360477 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
-       206 |        62 |    360477 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
-       207 |       186 |    360680 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
-       208 |        62 |    360680 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
-       209 |       188 |    360570 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
-       210 |       186 |    360573 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
-       211 |        62 |    360573 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
-       212 |       186 |    360409 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
-       213 |        62 |    360409 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
-       214 |       186 |    360289 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
-       215 |        62 |    360289 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
-       216 |       186 |    360347 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
-       217 |        62 |    360347 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
-       218 |       186 |    360387 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
-       219 |        62 |    360387 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
-       220 |       188 |    360348 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
-       221 |       186 |    360348 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
-       222 |        62 |    360348 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
-       223 |       186 |    360684 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
-       224 |        62 |    360684 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
-       225 |       186 |    360406 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
-       226 |        62 |    360406 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
-       227 |       186 |    360343 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
-       228 |        62 |    360343 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
-       229 |       186 |    360482 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
-       230 |        62 |    360482 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
-       231 |       186 |    360494 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
-       232 |        62 |    360494 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
-       233 |       186 |    360670 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
-       234 |        62 |    360670 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
-       235 |       186 |    360469 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
-       236 |        62 |    360469 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
-       237 |       186 |    360327 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
-       238 |        62 |    360327 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
-       239 |       186 |    360332 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
-       240 |        62 |    360332 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
-       241 |       186 |    360480 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
-       242 |        62 |    360480 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
-       243 |       186 |    360488 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
-       244 |        62 |    360488 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
-       245 |       186 |    360390 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
-       246 |        62 |    360390 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
-       247 |       186 |    360397 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
-       248 |        62 |    360397 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
-       249 |       186 |    360244 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
-       250 |        62 |    360244 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
-       251 |       186 |    360570 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
-       252 |        62 |    360570 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
-       253 |       186 |    360330 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
-       254 |        62 |    360330 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
-       255 |       186 |    360283 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
-       256 |        62 |    360283 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
-       257 |       186 |    360497 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
-       258 |        62 |    360497 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
-       259 |        62 |    360234 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
-       260 |        62 |    360565 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
-       261 |       186 |    360378 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
-       262 |        62 |    360378 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
-       263 |       186 |    360256 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
-       264 |        62 |    360256 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
-       265 |       186 |    360354 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
-       266 |        62 |    360354 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
-       267 |       188 |    360338 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
-       268 |       186 |    360338 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
-       269 |        62 |    360338 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
-       270 |       186 |    360486 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
-       271 |        62 |    360486 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
-       272 |       186 |    360500 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
-       273 |        62 |    360500 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
-       274 |       186 |    360462 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
-       275 |        62 |    360462 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
-       276 |       186 |    360676 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
-       277 |        62 |    360676 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
-       278 |       186 |    360403 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
-       279 |        62 |    360403 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
-       280 |       186 |    360246 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
-       281 |        62 |    360246 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
-       282 |       186 |    360276 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
-       283 |        62 |    360276 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
-       284 |       186 |    360578 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
-       285 |        62 |    360578 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
-       286 |       186 |    360320 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
-       287 |        62 |    360320 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
-       288 |       186 |    360678 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
-       289 |        62 |    360678 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
-       290 |       186 |    360696 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
-       291 |        62 |    360696 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
-       292 |       186 |    360401 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
-       293 |        62 |    360401 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
-       294 |       186 |    360234 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
-       295 |        62 |    360234 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
-       296 |        60 |    539127 |    0 |      1 |                     __kmp_launch_thread | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 538832
-       297 |       122 |    361564 |    0 |      1 |                      __kmp_join_barrier | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 361408
-       298 |       122 |    363029 |    0 |      1 |                      __kmp_join_barrier | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 361408
-       299 |       123 |    347961 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 347760
+       139 |       303 |    348932 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348149
+       140 |       303 |    348832 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348149
+       141 |       303 |    348801 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348149
+       142 |       141 |    740928 |    0 |      1 |                             __kmp_yield | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 740928
+       143 |         3 |    137849 |    0 |      1 |                       __libc_start_main | /lib64/libc.so.6 | 137792
+       144 |         3 |    138036 |    0 |      1 |                       __libc_start_main | /lib64/libc.so.6 | 137792
+       145 |         6 |    542492 |    0 |      1 |                         __kmp_fork_call | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 541920
+       146 |       145 |    544141 |    1 |      1 |  [Loop at line 1827 in __kmp_fork_call] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 542492
+       147 |         6 |    547351 |    0 |      1 |                         __kmp_fork_call | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 541920
+       148 |         7 |    553625 |    0 |      1 |                     __kmp_allocate_team | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 550000
+       149 |         7 |    553638 |    0 |      1 |                     __kmp_allocate_team | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 550000
+       150 |        20 |   1131249 |    0 |      1 |                  __intel_avx_rep_memset | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 1131088
+       151 |        20 |   1131249 |    0 |      1 |                  __intel_avx_rep_memset | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 1131088
+       152 |        26 |    361564 |    0 |      1 |                      __kmp_join_barrier | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 361408
+       153 |        26 |    363029 |    0 |      1 |                      __kmp_join_barrier | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 361408
+       154 |        27 |    347961 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 347760
+       155 |       154 |    348117 |    1 |      1 |[Loop at line 746 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 347961
+       156 |       155 |    348685 |    1 |      1 |[Loop at line 774 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348117
+       157 |       156 |    348149 |    1 |      1 |[Loop at line 792 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348685
+       158 |       157 |    348149 |    0 |      1 |                       kmp_flag_64::wait | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348149
+       159 |       156 |    348957 |    1 |      1 |[Loop at line 792 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348685
+       160 |        27 |    348957 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 347760
+       161 |       156 |    348804 |    1 |      1 |[Loop at line 792 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348685
+       162 |        27 |    348804 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 347760
+       163 |       156 |    348953 |    1 |      1 |[Loop at line 792 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348685
+       164 |        27 |    348953 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 347760
+       165 |       156 |    349139 |    1 |      1 |[Loop at line 792 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348685
+       166 |        27 |    349139 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 347760
+       167 |       156 |    348794 |    1 |      1 |[Loop at line 792 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348685
+       168 |        27 |    348794 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 347760
+       169 |         6 |    542492 |    0 |      1 |                         __kmp_fork_call | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 541920
+       170 |       169 |    544141 |    1 |      1 |  [Loop at line 1827 in __kmp_fork_call] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 542492
+       171 |       170 |    545710 |    1 |      1 |  [Loop at line 1801 in __kmp_fork_call] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 544141
+       172 |       170 |    545711 |    1 |      1 |  [Loop at line 1801 in __kmp_fork_call] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 544141
+       173 |         6 |    545711 |    0 |      1 |                         __kmp_fork_call | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 541920
+       174 |       156 |    348808 |    1 |      1 |[Loop at line 792 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348685
+       175 |        27 |    348808 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 347760
+       176 |        61 |    741597 |    0 |      1 |_INTERNAL_26_______src_z_Linux_util_cpp_313effc4::[OpenMP worker] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 741040
+       177 |        61 |    741682 |    0 |      1 |_INTERNAL_26_______src_z_Linux_util_cpp_313effc4::[OpenMP worker] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 741040
+       178 |        62 |    538900 |    0 |      1 |                     __kmp_launch_thread | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 538832
+       179 |        62 |    538911 |    0 |      1 |                     __kmp_launch_thread | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 538832
+       180 |        64 |    360234 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
+       181 |       180 |    358829 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
+       182 |       181 |    358829 |    0 |      1 |                       kmp_flag_64::wait | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
+       183 |       180 |    360350 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
+       184 |        64 |    360350 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
+       185 |       180 |    360340 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
+       186 |        64 |    360340 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
+       187 |       180 |    360409 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
+       188 |        64 |    360409 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
+       189 |       180 |    360676 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
+       190 |        64 |    360676 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
+       191 |       180 |    360343 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
+       192 |        64 |    360343 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
+       193 |       180 |    360490 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
+       194 |        64 |    360490 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
+       195 |       180 |    360403 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
+       196 |        64 |    360403 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
+       197 |       180 |    360482 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
+       198 |        64 |    360482 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
+       199 |       180 |    360256 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
+       200 |        64 |    360256 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
+       201 |       180 |    360244 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
+       202 |        64 |    360244 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
+       203 |       180 |    360241 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
+       204 |        64 |    360241 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
+       205 |       180 |    360480 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
+       206 |        64 |    360480 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
+       207 |       180 |    360469 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
+       208 |        64 |    360469 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
+       209 |       180 |    360397 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
+       210 |        64 |    360397 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
+       211 |       180 |    360696 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
+       212 |        64 |    360696 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
+       213 |       182 |    360338 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
+       214 |       180 |    360338 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
+       215 |        64 |    360338 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
+       216 |       180 |    360475 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
+       217 |        64 |    360475 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
+       218 |       180 |    360486 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
+       219 |        64 |    360486 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
+       220 |       180 |    360332 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
+       221 |        64 |    360332 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
+       222 |       180 |    360390 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
+       223 |        64 |    360390 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
+       224 |       182 |    360570 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
+       225 |       180 |    360573 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
+       226 |        64 |    360573 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
+       227 |       180 |    360354 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
+       228 |        64 |    360354 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
+       229 |       180 |    360327 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
+       230 |        64 |    360327 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
+       231 |       180 |    360283 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
+       232 |        64 |    360283 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
+       233 |       180 |    360347 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
+       234 |        64 |    360347 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
+       235 |       182 |    360348 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358829
+       236 |       180 |    360348 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
+       237 |        64 |    360348 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
+       238 |       180 |    360477 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
+       239 |        64 |    360477 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
+       240 |       180 |    360684 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
+       241 |        64 |    360684 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
+       242 |       180 |    360570 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
+       243 |        64 |    360570 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
+       244 |       180 |    360286 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
+       245 |        64 |    360286 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
+       246 |       180 |    360330 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
+       247 |        64 |    360330 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
+       248 |       180 |    360401 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
+       249 |        64 |    360401 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
+       250 |       180 |    360488 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
+       251 |        64 |    360488 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
+       252 |       180 |    360500 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
+       253 |        64 |    360500 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
+       254 |       180 |    360406 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
+       255 |        64 |    360406 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
+       256 |       180 |    360382 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
+       257 |        64 |    360382 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
+       258 |       180 |    360253 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
+       259 |        64 |    360253 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
+       260 |       180 |    360289 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
+       261 |        64 |    360289 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
+       262 |       180 |    360378 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
+       263 |        64 |    360378 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
+       264 |       180 |    360678 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
+       265 |        64 |    360678 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
+       266 |       180 |    360497 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
+       267 |        64 |    360497 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
+       268 |       180 |    360246 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
+       269 |        64 |    360246 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
+       270 |       180 |    360320 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
+       271 |        64 |    360320 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
+       272 |        64 |    360234 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
+       273 |        64 |    360565 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
+       274 |       180 |    360686 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
+       275 |        64 |    360686 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
+       276 |       180 |    360387 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
+       277 |        64 |    360387 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
+       278 |       180 |    360578 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
+       279 |        64 |    360578 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
+       280 |       180 |    360462 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
+       281 |        64 |    360462 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
+       282 |       180 |    360234 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
+       283 |        64 |    360234 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
+       284 |       180 |    360494 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
+       285 |        64 |    360494 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
+       286 |       180 |    360680 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
+       287 |        64 |    360680 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
+       288 |       180 |    360276 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
+       289 |        64 |    360276 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
+       290 |        62 |    539127 |    0 |      1 |                     __kmp_launch_thread | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 538832
+       291 |       120 |    361564 |    0 |      1 |                      __kmp_join_barrier | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 361408
+       292 |       120 |    363029 |    0 |      1 |                      __kmp_join_barrier | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 361408
+       293 |       121 |    347961 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 347760
+       294 |       293 |    348117 |    1 |      1 |[Loop at line 746 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 347961
+       295 |       294 |    348685 |    1 |      1 |[Loop at line 774 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348117
+       296 |       121 |    349032 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 347760
+       297 |       180 |    360670 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
+       298 |        64 |    360670 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
+       299 |       121 |    347961 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 347760
        300 |       299 |    348117 |    1 |      1 |[Loop at line 746 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 347961
        301 |       300 |    348685 |    1 |      1 |[Loop at line 774 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348117
        302 |       301 |    348149 |    1 |      1 |[Loop at line 792 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348685
        303 |       302 |    348149 |    0 |      1 |                       kmp_flag_64::wait | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348149
        304 |       301 |    348953 |    1 |      1 |[Loop at line 792 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348685
-       305 |       123 |    348953 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 347760
-       306 |       186 |    360253 |    1 |      1 |[Loop at line 866 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 360234
-       307 |        62 |    360253 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_release | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 358656
-       308 |       301 |    348932 |    1 |      1 |[Loop at line 792 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348685
-       309 |       123 |    348932 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 347760
-       310 |       303 |    348802 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_wait_template<kmp_flag_64> | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348149
-       311 |       301 |    348802 |    1 |      1 |[Loop at line 792 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348685
-       312 |       123 |    348802 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 347760
-       313 |       301 |    348695 |    1 |      1 |[Loop at line 792 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348685
-       314 |       123 |    348695 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 347760
-       315 |       117 |    541459 |    0 |      1 |                     [OpenMP dispatcher] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 541392
-       316 |       117 |    541483 |    0 |      1 |                     [OpenMP dispatcher] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 541392
-       317 |       301 |    348783 |    1 |      1 |[Loop at line 792 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348685
-       318 |       123 |    348783 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 347760
-       319 |       301 |    348801 |    1 |      1 |[Loop at line 792 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348685
-       320 |       123 |    348801 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 347760
-       321 |       301 |    348808 |    1 |      1 |[Loop at line 792 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348685
-       322 |       123 |    348808 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 347760
-       323 |       301 |    348804 |    1 |      1 |[Loop at line 792 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348685
-       324 |       123 |    348804 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 347760
-       325 |       301 |    348865 |    1 |      1 |[Loop at line 792 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348685
-       326 |       123 |    348865 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 347760
-       327 |       301 |    348740 |    1 |      1 |[Loop at line 792 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348685
-       328 |       123 |    348740 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 347760
-       329 |       301 |    348772 |    1 |      1 |[Loop at line 792 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348685
-       330 |       123 |    348772 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 347760
-       331 |       301 |    348832 |    1 |      1 |[Loop at line 792 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348685
-       332 |       123 |    348832 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 347760
-       333 |       301 |    348737 |    1 |      1 |[Loop at line 792 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348685
-       334 |       123 |    348737 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 347760
-       335 |       301 |    349131 |    1 |      1 |[Loop at line 792 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348685
-       336 |       123 |    349131 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 347760
-       337 |       301 |    348797 |    1 |      1 |[Loop at line 792 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348685
-       338 |       123 |    348797 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 347760
-       339 |       301 |    348794 |    1 |      1 |[Loop at line 792 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348685
-       340 |       123 |    348794 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 347760
-       341 |       123 |    347961 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 347760
-       342 |       341 |    348117 |    1 |      1 |[Loop at line 746 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 347961
-       343 |       342 |    348685 |    1 |      1 |[Loop at line 774 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348117
-       344 |       123 |    349032 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 347760
-       345 |       301 |    348945 |    1 |      1 |[Loop at line 792 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348685
-       346 |       123 |    348945 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 347760
-       347 |         4 |      5432 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5232
-       348 |         4 |      5487 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5232
-       349 |         4 |      5812 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5232
-       350 |       349 |      6115 |    0 |      0 |                       LU_decomp_kij_vec | /home/AstroVPK/code/lu/luDecomp | 5812
-       351 |       350 |      6212 |    1 |      0 | [Loop at line 335 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6115
-       352 |       351 |      6240 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6212
-       353 |       349 |      6240 |    0 |      0 |                       LU_decomp_kij_vec | /home/AstroVPK/code/lu/luDecomp | 5812
-       354 |         4 |      6240 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5232
-       355 |       352 |      6240 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6212
-       356 |       352 |      6475 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6464
-       357 |       352 |      6360 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
-       358 |       352 |      6213 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6212
-       359 |       352 |      6337 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
-       360 |       352 |      6465 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6464
-       361 |       350 |      6464 |    1 |      0 | [Loop at line 335 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6115
-       362 |       361 |      6475 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6212
-       363 |       349 |      6475 |    0 |      0 |                       LU_decomp_kij_vec | /home/AstroVPK/code/lu/luDecomp | 5812
-       364 |         4 |      6475 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5232
-       365 |       362 |      6240 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6212
-       366 |       362 |      6475 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6464
-       367 |       362 |      6360 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
-       368 |       362 |      6213 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6212
-       369 |       362 |      6337 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
-       370 |       362 |      6465 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6464
-       371 |       350 |      6336 |    1 |      0 | [Loop at line 335 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6115
-       372 |       371 |      6360 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6212
-       373 |       349 |      6360 |    0 |      0 |                       LU_decomp_kij_vec | /home/AstroVPK/code/lu/luDecomp | 5812
-       374 |         4 |      6360 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5232
-       375 |       372 |      6240 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6212
-       376 |       372 |      6475 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6464
-       377 |       372 |      6360 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
-       378 |       372 |      6213 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6212
-       379 |       372 |      6337 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
-       380 |       372 |      6465 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6464
-       381 |       361 |      6524 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6212
-       382 |       349 |      6524 |    0 |      0 |                       LU_decomp_kij_vec | /home/AstroVPK/code/lu/luDecomp | 5812
-       383 |         4 |      6524 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5232
-       384 |       381 |      6240 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6212
-       385 |       381 |      6475 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6464
-       386 |       381 |      6360 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
-       387 |       381 |      6213 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6212
-       388 |       381 |      6337 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
-       389 |       381 |      6465 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6464
-       390 |       371 |      6397 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6212
-       391 |       349 |      6397 |    0 |      0 |                       LU_decomp_kij_vec | /home/AstroVPK/code/lu/luDecomp | 5812
-       392 |         4 |      6397 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5232
-       393 |       390 |      6240 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6212
-       394 |       390 |      6475 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6464
-       395 |       390 |      6360 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
-       396 |       390 |      6213 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6212
-       397 |       390 |      6337 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
-       398 |       390 |      6465 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6464
-       399 |       371 |      6336 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6212
-       400 |       349 |      6336 |    0 |      0 |                       LU_decomp_kij_vec | /home/AstroVPK/code/lu/luDecomp | 5812
-       401 |         4 |      6336 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5232
-       402 |       399 |      6240 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6212
-       403 |       399 |      6475 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6464
-       404 |       399 |      6360 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
-       405 |       399 |      6213 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6212
-       406 |       399 |      6337 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
-       407 |       399 |      6465 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6464
-       408 |       371 |      6346 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6212
-       409 |       349 |      6346 |    0 |      0 |                       LU_decomp_kij_vec | /home/AstroVPK/code/lu/luDecomp | 5812
-       410 |         4 |      6346 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5232
-       411 |       408 |      6240 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6212
-       412 |       408 |      6475 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6464
-       413 |       408 |      6360 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
-       414 |       408 |      6213 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6212
-       415 |       408 |      6337 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
-       416 |       408 |      6465 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6464
-       417 |        41 |      9498 |    0 |      0 |                            VerifyResult | /home/AstroVPK/code/lu/luDecomp | 8496
-       418 |       417 |      9552 |    1 |      0 |      [Loop at line 551 in VerifyResult] | /home/AstroVPK/code/lu/luDecomp | 9498
-       419 |       418 |      9760 |    1 |      0 |      [Loop at line 552 in VerifyResult] | /home/AstroVPK/code/lu/luDecomp | 9552
-       420 |       419 |      9836 |    1 |      0 |      [Loop at line 553 in VerifyResult] | /home/AstroVPK/code/lu/luDecomp | 9760
-       421 |        41 |      9836 |    0 |      0 |                            VerifyResult | /home/AstroVPK/code/lu/luDecomp | 8496
-       422 |       420 |      9836 |    1 |      0 |      [Loop at line 553 in VerifyResult] | /home/AstroVPK/code/lu/luDecomp | 9760
-       423 |       420 |      9671 |    1 |      0 |      [Loop at line 553 in VerifyResult] | /home/AstroVPK/code/lu/luDecomp | 9670
-       424 |       420 |      9761 |    1 |      0 |      [Loop at line 553 in VerifyResult] | /home/AstroVPK/code/lu/luDecomp | 9760
-       425 |       420 |      9957 |    1 |      0 |      [Loop at line 553 in VerifyResult] | /home/AstroVPK/code/lu/luDecomp | 9956
-       426 |       351 |      6223 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6212
-       427 |       349 |      6223 |    0 |      0 |                       LU_decomp_kij_vec | /home/AstroVPK/code/lu/luDecomp | 5812
-       428 |         4 |      6223 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5232
-       429 |       426 |      6240 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6212
-       430 |       426 |      6475 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6464
-       431 |       426 |      6360 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
-       432 |       426 |      6213 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6212
-       433 |       426 |      6337 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
-       434 |       426 |      6465 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6464
-       435 |       371 |      6407 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6212
-       436 |       349 |      6407 |    0 |      0 |                       LU_decomp_kij_vec | /home/AstroVPK/code/lu/luDecomp | 5812
-       437 |         4 |      6407 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5232
-       438 |       435 |      6240 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6212
-       439 |       435 |      6475 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6464
-       440 |       435 |      6360 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
-       441 |       435 |      6213 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6212
-       442 |       435 |      6337 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
-       443 |       435 |      6465 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6464
-       444 |       349 |      6419 |    0 |      0 |                       LU_decomp_kij_vec | /home/AstroVPK/code/lu/luDecomp | 5812
-       445 |         4 |      6419 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5232
-       446 |       351 |      6267 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6212
-       447 |       349 |      6267 |    0 |      0 |                       LU_decomp_kij_vec | /home/AstroVPK/code/lu/luDecomp | 5812
-       448 |         4 |      6267 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5232
-       449 |       446 |      6240 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6212
-       450 |       446 |      6475 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6464
-       451 |       446 |      6360 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
-       452 |       446 |      6213 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6212
-       453 |       446 |      6337 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
-       454 |       446 |      6465 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6464
-       455 |       349 |      6207 |    0 |      0 |                       LU_decomp_kij_vec | /home/AstroVPK/code/lu/luDecomp | 5812
-       456 |         4 |      6207 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5232
-       457 |       371 |      6370 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6212
-       458 |       349 |      6370 |    0 |      0 |                       LU_decomp_kij_vec | /home/AstroVPK/code/lu/luDecomp | 5812
-       459 |         4 |      6370 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5232
-       460 |       457 |      6240 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6212
-       461 |       457 |      6475 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6464
-       462 |       457 |      6360 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
-       463 |       457 |      6213 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6212
-       464 |       457 |      6337 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
-       465 |       457 |      6465 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6464
-       466 |       361 |      6471 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6212
-       467 |       349 |      6471 |    0 |      0 |                       LU_decomp_kij_vec | /home/AstroVPK/code/lu/luDecomp | 5812
-       468 |         4 |      6471 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5232
-       469 |       466 |      6240 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6212
-       470 |       466 |      6475 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6464
-       471 |       466 |      6360 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
-       472 |       466 |      6213 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6212
-       473 |       466 |      6337 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
-       474 |       466 |      6465 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6464
-       475 |       349 |      6160 |    0 |      0 |                       LU_decomp_kij_vec | /home/AstroVPK/code/lu/luDecomp | 5812
-       476 |         4 |      6160 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5232
-       477 |       349 |      6459 |    0 |      0 |                       LU_decomp_kij_vec | /home/AstroVPK/code/lu/luDecomp | 5812
-       478 |         4 |      6459 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5232
-       479 |       349 |      6276 |    0 |      0 |                       LU_decomp_kij_vec | /home/AstroVPK/code/lu/luDecomp | 5812
-       480 |         4 |      6276 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5232
-       481 |       349 |      6137 |    0 |      0 |                       LU_decomp_kij_vec | /home/AstroVPK/code/lu/luDecomp | 5812
-       482 |         4 |      6137 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5232
-       483 |       349 |      6152 |    0 |      0 |                       LU_decomp_kij_vec | /home/AstroVPK/code/lu/luDecomp | 5812
-       484 |         4 |      6152 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5232
-       485 |       349 |      6551 |    0 |      0 |                       LU_decomp_kij_vec | /home/AstroVPK/code/lu/luDecomp | 5812
-       486 |         4 |      6551 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5232
-       487 |       119 |      7061 |    0 |      0 |               main$omp$parallel_for@637 | /home/AstroVPK/code/lu/luDecomp | 6839
-       488 |       487 |      7152 |    1 |      0 |[Loop at line 638 in main$omp$parallel_for@637] | /home/AstroVPK/code/lu/luDecomp | 7061
-       489 |       119 |      7172 |    0 |      0 |               main$omp$parallel_for@637 | /home/AstroVPK/code/lu/luDecomp | 6839
-       490 |        57 |     32179 |    0 |      1 |                            start_thread | /lib64/libpthread.so.0 | 32000
-       491 |        57 |     32196 |    0 |      1 |                            start_thread | /lib64/libpthread.so.0 | 32000
-       492 |        -1 |         0 |    0 |      0 |                      [Outside any loop] | n/a | 0
+       305 |       121 |    348953 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 347760
+       306 |       301 |    348804 |    1 |      1 |[Loop at line 792 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348685
+       307 |       121 |    348804 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 347760
+       308 |       301 |    349147 |    1 |      1 |[Loop at line 792 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348685
+       309 |       121 |    349147 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 347760
+       310 |       301 |    348865 |    1 |      1 |[Loop at line 792 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348685
+       311 |       121 |    348865 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 347760
+       312 |       301 |    348932 |    1 |      1 |[Loop at line 792 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348685
+       313 |       121 |    348932 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 347760
+       314 |       301 |    348832 |    1 |      1 |[Loop at line 792 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348685
+       315 |       121 |    348832 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 347760
+       316 |       301 |    348801 |    1 |      1 |[Loop at line 792 in _INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 348685
+       317 |       121 |    348801 |    0 |      1 |_INTERNAL_25_______src_kmp_barrier_cpp_5678b641::__kmp_hyper_barrier_gather | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 347760
+       318 |         4 |      5432 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5232
+       319 |         4 |      5487 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5232
+       320 |         4 |      5812 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5232
+       321 |       320 |      6115 |    0 |      0 |                       LU_decomp_kij_vec | /home/AstroVPK/code/lu/luDecomp | 5812
+       322 |       320 |      6295 |    0 |      0 |                       LU_decomp_kij_vec | /home/AstroVPK/code/lu/luDecomp | 5812
+       323 |         4 |      6295 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5232
+       324 |       321 |      6336 |    1 |      0 | [Loop at line 335 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6115
+       325 |       324 |      6397 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
+       326 |       320 |      6397 |    0 |      0 |                       LU_decomp_kij_vec | /home/AstroVPK/code/lu/luDecomp | 5812
+       327 |         4 |      6397 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5232
+       328 |       325 |      6397 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
+       329 |       325 |      6240 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6212
+       330 |       325 |      6513 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6464
+       331 |       325 |      6212 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6212
+       332 |       325 |      6336 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
+       333 |       325 |      6464 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6464
+       334 |       325 |      6213 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6212
+       335 |       325 |      6337 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
+       336 |       325 |      6465 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6464
+       337 |       321 |      6212 |    1 |      0 | [Loop at line 335 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6115
+       338 |       337 |      6240 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
+       339 |       320 |      6240 |    0 |      0 |                       LU_decomp_kij_vec | /home/AstroVPK/code/lu/luDecomp | 5812
+       340 |         4 |      6240 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5232
+       341 |       338 |      6397 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
+       342 |       338 |      6240 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6212
+       343 |       338 |      6513 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6464
+       344 |       338 |      6212 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6212
+       345 |       338 |      6336 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
+       346 |       338 |      6464 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6464
+       347 |       338 |      6213 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6212
+       348 |       338 |      6337 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
+       349 |       338 |      6465 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6464
+       350 |       324 |      6346 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
+       351 |       320 |      6346 |    0 |      0 |                       LU_decomp_kij_vec | /home/AstroVPK/code/lu/luDecomp | 5812
+       352 |         4 |      6346 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5232
+       353 |       350 |      6397 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
+       354 |       350 |      6240 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6212
+       355 |       350 |      6513 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6464
+       356 |       350 |      6212 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6212
+       357 |       350 |      6336 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
+       358 |       350 |      6464 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6464
+       359 |       350 |      6213 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6212
+       360 |       350 |      6337 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
+       361 |       350 |      6465 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6464
+       362 |       320 |      6437 |    0 |      0 |                       LU_decomp_kij_vec | /home/AstroVPK/code/lu/luDecomp | 5812
+       363 |         4 |      6437 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5232
+       364 |       324 |      6360 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
+       365 |       320 |      6360 |    0 |      0 |                       LU_decomp_kij_vec | /home/AstroVPK/code/lu/luDecomp | 5812
+       366 |         4 |      6360 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5232
+       367 |       364 |      6397 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
+       368 |       364 |      6240 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6212
+       369 |       364 |      6513 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6464
+       370 |       364 |      6212 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6212
+       371 |       364 |      6336 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
+       372 |       364 |      6464 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6464
+       373 |       364 |      6213 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6212
+       374 |       364 |      6337 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
+       375 |       364 |      6465 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6464
+       376 |       320 |      6293 |    0 |      0 |                       LU_decomp_kij_vec | /home/AstroVPK/code/lu/luDecomp | 5812
+       377 |         4 |      6293 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5232
+       378 |       324 |      6387 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
+       379 |       320 |      6387 |    0 |      0 |                       LU_decomp_kij_vec | /home/AstroVPK/code/lu/luDecomp | 5812
+       380 |         4 |      6387 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5232
+       381 |       378 |      6397 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
+       382 |       378 |      6240 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6212
+       383 |       378 |      6513 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6464
+       384 |       378 |      6212 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6212
+       385 |       378 |      6336 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
+       386 |       378 |      6464 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6464
+       387 |       378 |      6213 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6212
+       388 |       378 |      6337 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
+       389 |       378 |      6465 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6464
+       390 |       324 |      6407 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
+       391 |       320 |      6407 |    0 |      0 |                       LU_decomp_kij_vec | /home/AstroVPK/code/lu/luDecomp | 5812
+       392 |         4 |      6407 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5232
+       393 |       390 |      6397 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
+       394 |       390 |      6240 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6212
+       395 |       390 |      6513 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6464
+       396 |       390 |      6212 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6212
+       397 |       390 |      6336 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
+       398 |       390 |      6464 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6464
+       399 |       390 |      6213 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6212
+       400 |       390 |      6337 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
+       401 |       390 |      6465 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6464
+       402 |        46 |      9498 |    0 |      0 |                            VerifyResult | /home/AstroVPK/code/lu/luDecomp | 8496
+       403 |       402 |      9552 |    1 |      0 |      [Loop at line 551 in VerifyResult] | /home/AstroVPK/code/lu/luDecomp | 9498
+       404 |       403 |      9760 |    1 |      0 |      [Loop at line 552 in VerifyResult] | /home/AstroVPK/code/lu/luDecomp | 9552
+       405 |       404 |      9820 |    1 |      0 |      [Loop at line 553 in VerifyResult] | /home/AstroVPK/code/lu/luDecomp | 9760
+       406 |        46 |      9820 |    0 |      0 |                            VerifyResult | /home/AstroVPK/code/lu/luDecomp | 8496
+       407 |       405 |      9820 |    1 |      0 |      [Loop at line 553 in VerifyResult] | /home/AstroVPK/code/lu/luDecomp | 9760
+       408 |       405 |      9760 |    1 |      0 |      [Loop at line 553 in VerifyResult] | /home/AstroVPK/code/lu/luDecomp | 9760
+       409 |       405 |      9671 |    1 |      0 |      [Loop at line 553 in VerifyResult] | /home/AstroVPK/code/lu/luDecomp | 9670
+       410 |       405 |      9761 |    1 |      0 |      [Loop at line 553 in VerifyResult] | /home/AstroVPK/code/lu/luDecomp | 9760
+       411 |       405 |      9957 |    1 |      0 |      [Loop at line 553 in VerifyResult] | /home/AstroVPK/code/lu/luDecomp | 9956
+       412 |       321 |      6464 |    1 |      0 | [Loop at line 335 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6115
+       413 |       412 |      6513 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
+       414 |       320 |      6513 |    0 |      0 |                       LU_decomp_kij_vec | /home/AstroVPK/code/lu/luDecomp | 5812
+       415 |         4 |      6513 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5232
+       416 |       413 |      6397 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
+       417 |       413 |      6240 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6212
+       418 |       413 |      6513 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6464
+       419 |       413 |      6212 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6212
+       420 |       413 |      6336 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
+       421 |       413 |      6464 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6464
+       422 |       413 |      6213 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6212
+       423 |       413 |      6337 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
+       424 |       413 |      6465 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6464
+       425 |       324 |      6414 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
+       426 |       320 |      6414 |    0 |      0 |                       LU_decomp_kij_vec | /home/AstroVPK/code/lu/luDecomp | 5812
+       427 |         4 |      6414 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5232
+       428 |       425 |      6397 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
+       429 |       425 |      6240 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6212
+       430 |       425 |      6513 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6464
+       431 |       425 |      6212 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6212
+       432 |       425 |      6336 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
+       433 |       425 |      6464 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6464
+       434 |       425 |      6213 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6212
+       435 |       425 |      6337 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
+       436 |       425 |      6465 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6464
+       437 |       320 |      6419 |    0 |      0 |                       LU_decomp_kij_vec | /home/AstroVPK/code/lu/luDecomp | 5812
+       438 |         4 |      6419 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5232
+       439 |       324 |      6417 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
+       440 |       320 |      6417 |    0 |      0 |                       LU_decomp_kij_vec | /home/AstroVPK/code/lu/luDecomp | 5812
+       441 |         4 |      6417 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5232
+       442 |       439 |      6397 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
+       443 |       439 |      6240 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6212
+       444 |       439 |      6513 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6464
+       445 |       439 |      6212 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6212
+       446 |       439 |      6336 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
+       447 |       439 |      6464 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6464
+       448 |       439 |      6213 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6212
+       449 |       439 |      6337 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
+       450 |       439 |      6465 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6464
+       451 |       412 |      6503 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
+       452 |       320 |      6503 |    0 |      0 |                       LU_decomp_kij_vec | /home/AstroVPK/code/lu/luDecomp | 5812
+       453 |         4 |      6503 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5232
+       454 |       451 |      6397 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
+       455 |       451 |      6240 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6212
+       456 |       451 |      6513 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6464
+       457 |       451 |      6212 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6212
+       458 |       451 |      6336 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
+       459 |       451 |      6464 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6464
+       460 |       451 |      6213 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6212
+       461 |       451 |      6337 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
+       462 |       451 |      6465 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6464
+       463 |       320 |      6152 |    0 |      0 |                       LU_decomp_kij_vec | /home/AstroVPK/code/lu/luDecomp | 5812
+       464 |         4 |      6152 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5232
+       465 |       320 |      6198 |    0 |      0 |                       LU_decomp_kij_vec | /home/AstroVPK/code/lu/luDecomp | 5812
+       466 |         4 |      6198 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5232
+       467 |       324 |      6350 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
+       468 |       320 |      6350 |    0 |      0 |                       LU_decomp_kij_vec | /home/AstroVPK/code/lu/luDecomp | 5812
+       469 |         4 |      6350 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5232
+       470 |       467 |      6397 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
+       471 |       467 |      6240 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6212
+       472 |       467 |      6513 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6464
+       473 |       467 |      6212 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6212
+       474 |       467 |      6336 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
+       475 |       467 |      6464 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6464
+       476 |       467 |      6213 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6212
+       477 |       467 |      6337 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6336
+       478 |       467 |      6465 |    1 |      0 | [Loop at line 339 in LU_decomp_kij_vec] | /home/AstroVPK/code/lu/luDecomp | 6464
+       479 |       320 |      6298 |    0 |      0 |                       LU_decomp_kij_vec | /home/AstroVPK/code/lu/luDecomp | 5812
+       480 |         4 |      6298 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5232
+       481 |       320 |      6279 |    0 |      0 |                       LU_decomp_kij_vec | /home/AstroVPK/code/lu/luDecomp | 5812
+       482 |         4 |      6279 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5232
+       483 |       126 |      7061 |    0 |      0 |               main$omp$parallel_for@637 | /home/AstroVPK/code/lu/luDecomp | 6839
+       484 |       483 |      7152 |    1 |      0 |[Loop at line 638 in main$omp$parallel_for@637] | /home/AstroVPK/code/lu/luDecomp | 7061
+       485 |       126 |      7172 |    0 |      0 |               main$omp$parallel_for@637 | /home/AstroVPK/code/lu/luDecomp | 6839
+       486 |       126 |      7180 |    0 |      0 |               main$omp$parallel_for@637 | /home/AstroVPK/code/lu/luDecomp | 6839
+       487 |       126 |      7082 |    0 |      0 |               main$omp$parallel_for@637 | /home/AstroVPK/code/lu/luDecomp | 6839
+       488 |        59 |     32179 |    0 |      1 |                            start_thread | /lib64/libpthread.so.0 | 32000
+       489 |        59 |     32196 |    0 |      1 |                            start_thread | /lib64/libpthread.so.0 | 32000
+       490 |        -1 |         0 |    0 |      0 |                      [Outside any loop] | n/a | 0
