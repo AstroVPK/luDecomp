@@ -10,7 +10,7 @@
            is_vectorized="0"
            self_time="6.927249E-01"
            total_time="6.927249E-01"
-           trip_counts=""
+           trip_counts="64"
            func_instance="32"
            priority="0"/>
   <hotspot filename="/home/AstroVPK/code/lu/main.cc"
@@ -19,7 +19,7 @@
            is_vectorized="0"
            self_time="0.000000E+00"
            total_time="6.927249E-01"
-           trip_counts=""
+           trip_counts="1"
            func_instance="34"
            priority="0"/>
   <hotspot filename="/home/AstroVPK/code/lu/main.cc"
@@ -28,7 +28,7 @@
            is_vectorized="0"
            self_time="0.000000E+00"
            total_time="1.357762E+00"
-           trip_counts=""
+           trip_counts="100"
            func_instance="15"
            priority="0"/>
   <hotspot filename="/home/AstroVPK/code/lu/main.cc"
@@ -37,7 +37,7 @@
            is_vectorized="0"
            self_time="0.000000E+00"
            total_time="5.995609E-01"
-           trip_counts=""
+           trip_counts="1"
            func_instance="18"
            priority="0"/>
   <hotspot filename="/home/AstroVPK/code/lu/main.cc"
@@ -46,7 +46,7 @@
            is_vectorized="0"
            self_time="0.000000E+00"
            total_time="5.995609E-01"
-           trip_counts=""
+           trip_counts="10"
            func_instance="22"
            priority="0"/>
 </IntelParallelAdvisorSummary >
