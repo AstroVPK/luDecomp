@@ -1,9 +1,0 @@
--r
-/home/AstroVPK/Documents/lu_knl/e000/trc000
--quiet
--cs-file
-/home/AstroVPK/Documents/lu_knl/e000/callstacks.def
---cs-mode=no-count-loops,no-count-flops
---count-flops
---
-/home/AstroVPK/code/lu/luDecomp
