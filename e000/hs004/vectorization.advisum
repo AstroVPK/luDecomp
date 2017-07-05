@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- <!DOCTYPE IntelParallelAdvisorSummaryCollection SYSTEM  "IntelParallelAdvisorSummaryCollection.dtd"> -->
+
+<IntelParallelAdvisorSummary version="" 
+                             kind="DATAKIND_SURVEY_EX" >
+  <hotspot filename="/home/AstroVPK/code/lu/main.cc"
+           line_no="555"
+           routine="VerifyResult"
+           is_vectorized="1"
+           self_time="2.000186E-02"
+           total_time="2.000186E-02"
+           trip_counts="8"
+           func_instance="126"
+           priority="0"/>
+  <hotspot filename="/home/AstroVPK/code/lu/main.cc"
+           line_no="373"
+           routine="LU_decomp_kij_vec_reg"
+           is_vectorized="1"
+           self_time="3.798134E-01"
+           total_time="3.798134E-01"
+           trip_counts="8; 1"
+           func_instance="121"
+           priority="0"/>
+  <hotspot filename="/home/AstroVPK/code/lu/main.cc"
+           line_no="368"
+           routine="LU_decomp_kij_vec_reg"
+           is_vectorized="0"
+           self_time="1.600130E-01"
+           total_time="5.398264E-01"
+           trip_counts="127"
+           func_instance="20"
+           priority="0"/>
+  <hotspot filename="/home/AstroVPK/code/lu/main.cc"
+           line_no="365"
+           routine="LU_decomp_kij_vec_reg"
+           is_vectorized="0"
+           self_time="3.999341E-02"
+           total_time="5.798198E-01"
+           trip_counts="127"
+           func_instance="21"
+           priority="0"/>
+  <hotspot filename="/home/AstroVPK/code/lu/main.cc"
+           line_no="642"
+           routine="main$omp$parallel_for@639"
+           is_vectorized="0"
+           self_time="8.444349E-01"
+           total_time="8.444349E-01"
+           trip_counts="64"
+           func_instance="27"
+           priority="0"/>
+</IntelParallelAdvisorSummary >
