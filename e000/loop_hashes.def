@@ -1,19 +1,22 @@
 # hash file version: 1
-82	11	/home/AstroVPK/code/lu/luDecomp	6104	6397	/home/AstroVPK/code/lu/main.cc	762	293	f94b71256bedf45c197ac23adde267b7	0	1	0
-83	14	/home/AstroVPK/code/lu/luDecomp	6087	10208,6771	/home/AstroVPK/code/lu/main.cc	759	684	f94b71256bedf45c197ac23adde267b7	0	1	0
-84	25	/home/AstroVPK/code/lu/luDecomp	8608	8676	/home/AstroVPK/code/lu/main.cc	570	68	f94b71256bedf45c197ac23adde267b7	1	2	0
-85	27	/home/AstroVPK/code/lu/luDecomp	8531	10265,8836	/home/AstroVPK/code/lu/main.cc	544	305	f94b71256bedf45c197ac23adde267b7	0	1	0
-86	28	/home/AstroVPK/code/lu/luDecomp	8001	10265,8935	/home/AstroVPK/code/lu/main.cc	561	934	f94b71256bedf45c197ac23adde267b7	0	1	0
-87	31	/home/AstroVPK/code/lu/luDecomp	7704	7734	/home/AstroVPK/code/lu/main.cc	555	30	f94b71256bedf45c197ac23adde267b7	1	2	0
-88	32	/home/AstroVPK/code/lu/luDecomp	7579	7828	/home/AstroVPK/code/lu/main.cc	544	249	f94b71256bedf45c197ac23adde267b7	0	1	0
-89	34	/home/AstroVPK/code/lu/luDecomp	8745	8803	/home/AstroVPK/code/lu/main.cc	570	58	f94b71256bedf45c197ac23adde267b7	1	1	0
-90	36	/home/AstroVPK/code/lu/luDecomp	9336	9359	/home/AstroVPK/code/lu/main.cc	580	23	f94b71256bedf45c197ac23adde267b7	1	1	0
-91	38	/home/AstroVPK/code/lu/luDecomp	9162	10251,9469	/home/AstroVPK/code/lu/main.cc	544	307	f94b71256bedf45c197ac23adde267b7	0	1	0
-92	45	/home/AstroVPK/code/lu/luDecomp	9408	9448	/home/AstroVPK/code/lu/main.cc	580	40	f94b71256bedf45c197ac23adde267b7	1	1	0
-93	52	/home/AstroVPK/code/lu/luDecomp	7646		/home/AstroVPK/code/lu/main.cc	555	34	f94b71256bedf45c197ac23adde267b7	1	1	0
-94	54	/home/AstroVPK/code/lu/luDecomp	7771		/home/AstroVPK/code/lu/main.cc	555	33	f94b71256bedf45c197ac23adde267b7	1	1	0
-95	55	/home/AstroVPK/code/lu/luDecomp	9255	9295	/home/AstroVPK/code/lu/main.cc	580	40	f94b71256bedf45c197ac23adde267b7	1	1	0
-96	120	/home/AstroVPK/code/lu/luDecomp	7579	7828,10251,9469	/home/AstroVPK/code/lu/main.cc	544	556	f94b71256bedf45c197ac23adde267b7	0	1	0
-97	121	/home/AstroVPK/code/lu/luDecomp	7646	7680,7734,7804	/home/AstroVPK/code/lu/main.cc	555	97	f94b71256bedf45c197ac23adde267b7	1	1	0
-98	122	/home/AstroVPK/code/lu/luDecomp	8608	8676,8803	/home/AstroVPK/code/lu/main.cc	570	126	f94b71256bedf45c197ac23adde267b7	1	1	0
-99	123	/home/AstroVPK/code/lu/luDecomp	9255	9295,9359,9448	/home/AstroVPK/code/lu/main.cc	580	103	f94b71256bedf45c197ac23adde267b7	1	1	0
+118	10	/home/AstroVPK/code/lu/luDecomp	5628	5777	/home/AstroVPK/code/lu/main.cc	692	149	14c0f1dc32f24b241bfa7096389294de	0	1	0
+119	14	/home/AstroVPK/code/lu/luDecomp	6090	6380	/home/AstroVPK/code/lu/main.cc	762	290	14c0f1dc32f24b241bfa7096389294de	0	1	0
+120	15	/home/AstroVPK/code/lu/luDecomp	6073	6744	/home/AstroVPK/code/lu/main.cc	759	671	14c0f1dc32f24b241bfa7096389294de	0	1	0
+121	16	/home/AstroVPK/code/lu/luDecomp	8328	10014,8628	/home/AstroVPK/code/lu/main.cc	544	300	14c0f1dc32f24b241bfa7096389294de	0	1	0
+122	17	/home/AstroVPK/code/lu/luDecomp	7798	10014,8728	/home/AstroVPK/code/lu/main.cc	561	930	14c0f1dc32f24b241bfa7096389294de	0	1	0
+123	18	/home/AstroVPK/code/lu/luDecomp	8400	8468	/home/AstroVPK/code/lu/main.cc	570	68	14c0f1dc32f24b241bfa7096389294de	1	2	0
+124	20	/home/AstroVPK/code/lu/luDecomp	8537	8595	/home/AstroVPK/code/lu/main.cc	570	58	14c0f1dc32f24b241bfa7096389294de	1	1	0
+125	21	/home/AstroVPK/code/lu/luDecomp	7502	7532	/home/AstroVPK/code/lu/main.cc	555	30	14c0f1dc32f24b241bfa7096389294de	1	2	0
+126	22	/home/AstroVPK/code/lu/luDecomp	7377	7626	/home/AstroVPK/code/lu/main.cc	544	249	14c0f1dc32f24b241bfa7096389294de	0	1	0
+127	23	/home/AstroVPK/code/lu/luDecomp	9842	9901	/home/AstroVPK/code/lu/main.cc	697	59	14c0f1dc32f24b241bfa7096389294de	0	2	0
+128	25	/home/AstroVPK/code/lu/luDecomp	9831	9955	/home/AstroVPK/code/lu/main.cc	695	124	14c0f1dc32f24b241bfa7096389294de	0	1	0
+129	26	/home/AstroVPK/code/lu/luDecomp	9128	9151	/home/AstroVPK/code/lu/main.cc	580	23	14c0f1dc32f24b241bfa7096389294de	1	1	0
+130	27	/home/AstroVPK/code/lu/luDecomp	8954	10000,9261	/home/AstroVPK/code/lu/main.cc	544	307	14c0f1dc32f24b241bfa7096389294de	0	1	0
+131	36	/home/AstroVPK/code/lu/luDecomp	7444		/home/AstroVPK/code/lu/main.cc	555	34	14c0f1dc32f24b241bfa7096389294de	1	1	0
+132	37	/home/AstroVPK/code/lu/luDecomp	7569		/home/AstroVPK/code/lu/main.cc	555	33	14c0f1dc32f24b241bfa7096389294de	1	1	0
+133	38	/home/AstroVPK/code/lu/luDecomp	9047		/home/AstroVPK/code/lu/main.cc	580	40	14c0f1dc32f24b241bfa7096389294de	1	1	0
+134	40	/home/AstroVPK/code/lu/luDecomp	9200		/home/AstroVPK/code/lu/main.cc	580	40	14c0f1dc32f24b241bfa7096389294de	1	1	0
+135	110	/home/AstroVPK/code/lu/luDecomp	7377	7626,10000,9261	/home/AstroVPK/code/lu/main.cc	544	556	14c0f1dc32f24b241bfa7096389294de	0	1	0
+136	111	/home/AstroVPK/code/lu/luDecomp	7444	7478,7532,7602	/home/AstroVPK/code/lu/main.cc	555	97	14c0f1dc32f24b241bfa7096389294de	1	1	0
+137	112	/home/AstroVPK/code/lu/luDecomp	8400	8468,8595	/home/AstroVPK/code/lu/main.cc	570	126	14c0f1dc32f24b241bfa7096389294de	1	1	0
+138	113	/home/AstroVPK/code/lu/luDecomp	9047	9087,9151,9240	/home/AstroVPK/code/lu/main.cc	580	103	14c0f1dc32f24b241bfa7096389294de	1	1	0
