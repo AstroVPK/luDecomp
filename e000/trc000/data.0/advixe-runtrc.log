@@ -3,7 +3,7 @@
 
 <msg id="1" tool="runtool">
   <type>log-start</type>
-  <arg>2017/07/06 11:10:10</arg>
+  <arg>2017/07/06 15:08:23</arg>
 </msg>
 <msg id="2" tool="runtool">
   <type>collector-starts</type>
@@ -15,205 +15,205 @@
 <msg id="4" tool="trc">
   <type>ProcessStart</type>
   <arg>/home/AstroVPK/code/lu/luDecomp</arg>
-  <arg>182892</arg>
+  <arg>13925</arg>
   <severity>INFO</severity>
-  <timestamp>Thu Jul  6 11:10:11 2017</timestamp>
+  <timestamp>Thu Jul  6 15:08:23 2017</timestamp>
 </msg>
 <msg id="5" tool="trc">
   <type>ProcessAnalysisMode</type>
   <arg>full</arg>
   <severity>INFO</severity>
-  <timestamp>Thu Jul  6 11:10:12 2017</timestamp>
+  <timestamp>Thu Jul  6 15:08:28 2017</timestamp>
 </msg>
 <msg id="6" tool="trc">
   <type>LoadModule</type>
   <arg>/home/AstroVPK/code/lu/luDecomp</arg>
   <arg>0x400000</arg>
-  <arg>0x615b1f</arg>
+  <arg>0x616b1f</arg>
   <severity>INFO</severity>
-  <timestamp>Thu Jul  6 11:10:12 2017</timestamp>
+  <timestamp>Thu Jul  6 15:08:28 2017</timestamp>
 </msg>
 <msg id="7" tool="trc">
   <type>LoadModule</type>
   <arg>/lib64/ld-linux-x86-64.so.2</arg>
-  <arg>0x7fe65d8bb000</arg>
-  <arg>0x7fe65dadd14f</arg>
+  <arg>0x7f1a0f073000</arg>
+  <arg>0x7f1a0f29514f</arg>
   <severity>INFO</severity>
-  <timestamp>Thu Jul  6 11:10:12 2017</timestamp>
+  <timestamp>Thu Jul  6 15:08:28 2017</timestamp>
 </msg>
 <msg id="8" tool="trc">
   <type>LoadModule</type>
   <arg>[vdso]</arg>
-  <arg>0x7ffd75d55000</arg>
-  <arg>0x7ffd75d55fdc</arg>
+  <arg>0x7fffd450b000</arg>
+  <arg>0x7fffd450bfdc</arg>
   <severity>INFO</severity>
-  <timestamp>Thu Jul  6 11:10:12 2017</timestamp>
+  <timestamp>Thu Jul  6 15:08:28 2017</timestamp>
 </msg>
 <msg id="9" tool="trc">
   <type>LoadModule</type>
   <arg>/lib64/libm.so.6</arg>
-  <arg>0x7fe648ecf000</arg>
-  <arg>0x7fe6491d0147</arg>
+  <arg>0x7f19fa625000</arg>
+  <arg>0x7f19fa926147</arg>
   <severity>INFO</severity>
-  <timestamp>Thu Jul  6 11:10:13 2017</timestamp>
+  <timestamp>Thu Jul  6 15:08:30 2017</timestamp>
 </msg>
 <msg id="10" tool="trc">
   <type>LoadModule</type>
   <arg>/opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so</arg>
-  <arg>0x7fe648b07000</arg>
-  <arg>0x7fe648eaa9bf</arg>
+  <arg>0x7f19fa25d000</arg>
+  <arg>0x7f19fa6009bf</arg>
   <severity>INFO</severity>
-  <timestamp>Thu Jul  6 11:10:13 2017</timestamp>
+  <timestamp>Thu Jul  6 15:08:30 2017</timestamp>
 </msg>
 <msg id="11" tool="trc">
   <type>LoadModule</type>
   <arg>/lib64/libmemkind.so.0</arg>
-  <arg>0x7fe6488b0000</arg>
-  <arg>0x7fe648b06a07</arg>
+  <arg>0x7f19fa006000</arg>
+  <arg>0x7f19fa25ca07</arg>
   <severity>INFO</severity>
-  <timestamp>Thu Jul  6 11:10:13 2017</timestamp>
+  <timestamp>Thu Jul  6 15:08:30 2017</timestamp>
 </msg>
 <msg id="12" tool="trc">
   <type>LoadModule</type>
   <arg>/lib64/libstdc++.so.6</arg>
-  <arg>0x7fe6485a7000</arg>
-  <arg>0x7fe6488af41f</arg>
+  <arg>0x7f19f9cfd000</arg>
+  <arg>0x7f19fa00541f</arg>
   <severity>INFO</severity>
-  <timestamp>Thu Jul  6 11:10:14 2017</timestamp>
+  <timestamp>Thu Jul  6 15:08:30 2017</timestamp>
 </msg>
 <msg id="13" tool="trc">
   <type>LoadModule</type>
   <arg>/lib64/libgcc_s.so.1</arg>
-  <arg>0x7fe648391000</arg>
-  <arg>0x7fe6485a63ff</arg>
+  <arg>0x7f19f9ae7000</arg>
+  <arg>0x7f19f9cfc3ff</arg>
   <severity>INFO</severity>
-  <timestamp>Thu Jul  6 11:10:14 2017</timestamp>
+  <timestamp>Thu Jul  6 15:08:30 2017</timestamp>
 </msg>
 <msg id="14" tool="trc">
   <type>LoadModule</type>
   <arg>/lib64/libpthread.so.0</arg>
-  <arg>0x7fe648175000</arg>
-  <arg>0x7fe64839045f</arg>
+  <arg>0x7f19f98cb000</arg>
+  <arg>0x7f19f9ae645f</arg>
   <severity>INFO</severity>
-  <timestamp>Thu Jul  6 11:10:14 2017</timestamp>
+  <timestamp>Thu Jul  6 15:08:30 2017</timestamp>
 </msg>
 <msg id="15" tool="trc">
   <type>LoadModule</type>
   <arg>/lib64/libc.so.6</arg>
-  <arg>0x7fe647db4000</arg>
-  <arg>0x7fe6481741ff</arg>
+  <arg>0x7f19f950a000</arg>
+  <arg>0x7f19f98ca1ff</arg>
   <severity>INFO</severity>
-  <timestamp>Thu Jul  6 11:10:14 2017</timestamp>
+  <timestamp>Thu Jul  6 15:08:30 2017</timestamp>
 </msg>
 <msg id="16" tool="trc">
   <type>LoadModule</type>
   <arg>/lib64/libdl.so.2</arg>
-  <arg>0x7fe647bb0000</arg>
-  <arg>0x7fe647db312f</arg>
+  <arg>0x7f19f9306000</arg>
+  <arg>0x7f19f950912f</arg>
   <severity>INFO</severity>
-  <timestamp>Thu Jul  6 11:10:14 2017</timestamp>
+  <timestamp>Thu Jul  6 15:08:30 2017</timestamp>
 </msg>
 <msg id="17" tool="trc">
   <type>LoadModule</type>
   <arg>/lib64/libnuma.so.1</arg>
-  <arg>0x7fe647992000</arg>
-  <arg>0x7fe647b9d8e7</arg>
+  <arg>0x7f19f90e4000</arg>
+  <arg>0x7f19f92ef8e7</arg>
   <severity>INFO</severity>
-  <timestamp>Thu Jul  6 11:10:14 2017</timestamp>
+  <timestamp>Thu Jul  6 15:08:30 2017</timestamp>
 </msg>
 <msg id="18" tool="trc">
   <type>LoadModule</type>
   <arg>/opt/intel/advisor_2017.1.3.510716/lib64/runtime/libittnotify.so</arg>
-  <arg>0x7fe64682e000</arg>
-  <arg>0x7fe646a3989f</arg>
+  <arg>0x7f19f79f4000</arg>
+  <arg>0x7f19f7bff89f</arg>
   <severity>INFO</severity>
-  <timestamp>Thu Jul  6 11:10:16 2017</timestamp>
+  <timestamp>Thu Jul  6 15:08:33 2017</timestamp>
 </msg>
 <msg id="19" tool="trc">
   <type>UnloadModule</type>
   <arg>/home/AstroVPK/code/lu/luDecomp</arg>
   <severity>INFO</severity>
-  <timestamp>Thu Jul  6 11:10:39 2017</timestamp>
+  <timestamp>Thu Jul  6 15:09:22 2017</timestamp>
 </msg>
 <msg id="20" tool="trc">
   <type>UnloadModule</type>
   <arg>/lib64/ld-linux-x86-64.so.2</arg>
   <severity>INFO</severity>
-  <timestamp>Thu Jul  6 11:10:39 2017</timestamp>
+  <timestamp>Thu Jul  6 15:09:22 2017</timestamp>
 </msg>
 <msg id="21" tool="trc">
   <type>UnloadModule</type>
   <arg>[vdso]</arg>
   <severity>INFO</severity>
-  <timestamp>Thu Jul  6 11:10:39 2017</timestamp>
+  <timestamp>Thu Jul  6 15:09:22 2017</timestamp>
 </msg>
 <msg id="22" tool="trc">
   <type>UnloadModule</type>
   <arg>/lib64/libm.so.6</arg>
   <severity>INFO</severity>
-  <timestamp>Thu Jul  6 11:10:39 2017</timestamp>
+  <timestamp>Thu Jul  6 15:09:22 2017</timestamp>
 </msg>
 <msg id="23" tool="trc">
   <type>UnloadModule</type>
   <arg>/opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so</arg>
   <severity>INFO</severity>
-  <timestamp>Thu Jul  6 11:10:39 2017</timestamp>
+  <timestamp>Thu Jul  6 15:09:22 2017</timestamp>
 </msg>
 <msg id="24" tool="trc">
   <type>UnloadModule</type>
   <arg>/lib64/libmemkind.so.0</arg>
   <severity>INFO</severity>
-  <timestamp>Thu Jul  6 11:10:39 2017</timestamp>
+  <timestamp>Thu Jul  6 15:09:22 2017</timestamp>
 </msg>
 <msg id="25" tool="trc">
   <type>UnloadModule</type>
   <arg>/lib64/libstdc++.so.6</arg>
   <severity>INFO</severity>
-  <timestamp>Thu Jul  6 11:10:39 2017</timestamp>
+  <timestamp>Thu Jul  6 15:09:22 2017</timestamp>
 </msg>
 <msg id="26" tool="trc">
   <type>UnloadModule</type>
   <arg>/lib64/libgcc_s.so.1</arg>
   <severity>INFO</severity>
-  <timestamp>Thu Jul  6 11:10:39 2017</timestamp>
+  <timestamp>Thu Jul  6 15:09:22 2017</timestamp>
 </msg>
 <msg id="27" tool="trc">
   <type>UnloadModule</type>
   <arg>/lib64/libpthread.so.0</arg>
   <severity>INFO</severity>
-  <timestamp>Thu Jul  6 11:10:39 2017</timestamp>
+  <timestamp>Thu Jul  6 15:09:22 2017</timestamp>
 </msg>
 <msg id="28" tool="trc">
   <type>UnloadModule</type>
   <arg>/lib64/libc.so.6</arg>
   <severity>INFO</severity>
-  <timestamp>Thu Jul  6 11:10:39 2017</timestamp>
+  <timestamp>Thu Jul  6 15:09:22 2017</timestamp>
 </msg>
 <msg id="29" tool="trc">
   <type>UnloadModule</type>
   <arg>/lib64/libdl.so.2</arg>
   <severity>INFO</severity>
-  <timestamp>Thu Jul  6 11:10:39 2017</timestamp>
+  <timestamp>Thu Jul  6 15:09:22 2017</timestamp>
 </msg>
 <msg id="30" tool="trc">
   <type>UnloadModule</type>
   <arg>/lib64/libnuma.so.1</arg>
   <severity>INFO</severity>
-  <timestamp>Thu Jul  6 11:10:39 2017</timestamp>
+  <timestamp>Thu Jul  6 15:09:22 2017</timestamp>
 </msg>
 <msg id="31" tool="trc">
   <type>UnloadModule</type>
   <arg>/opt/intel/advisor_2017.1.3.510716/lib64/runtime/libittnotify.so</arg>
   <severity>INFO</severity>
-  <timestamp>Thu Jul  6 11:10:39 2017</timestamp>
+  <timestamp>Thu Jul  6 15:09:22 2017</timestamp>
 </msg>
 <msg id="32" tool="trc">
   <type>ProcessFinish</type>
   <arg>/home/AstroVPK/code/lu/luDecomp</arg>
-  <arg>182892</arg>
+  <arg>13925</arg>
   <arg>0x0</arg>
   <severity>INFO</severity>
-  <timestamp>Thu Jul  6 11:10:40 2017</timestamp>
+  <timestamp>Thu Jul  6 15:09:24 2017</timestamp>
 </msg>
 <msg id="33" tool="runtool">
   <type>app-exit-code</type>
@@ -228,7 +228,7 @@
 </msg>
 <msg id="36" tool="runtool">
   <type>log-end</type>
-  <arg>2017/07/06 11:10:44</arg>
+  <arg>2017/07/06 15:09:27</arg>
 </msg>
 
 </log>
