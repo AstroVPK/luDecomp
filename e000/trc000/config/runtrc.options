@@ -1,0 +1,15 @@
+-r
+/home/AstroVPK/Documents/lu_knl/e000/trc000
+-quiet
+-search-dir
+sym:p=/home/AstroVPK/code/lu
+-search-dir
+bin:p=/home/AstroVPK/code/lu
+-search-dir
+src:p=/home/AstroVPK/code/lu
+-cs-file
+/home/AstroVPK/Documents/lu_knl/e000/callstacks.def
+--cs-mode=no-count-loops,no-count-flops
+--count-flops
+--
+/home/AstroVPK/code/lu/luDecomp
