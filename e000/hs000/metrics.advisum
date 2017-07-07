@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<IntelParallelAdvisorMetrics version="3.0">
+    <ElapsedTime>3.97054</ElapsedTime>
+    <ElapsedTimeMKL>1.55883e-316</ElapsedTimeMKL>
+    <PausedTime>0.000855631</PausedTime>
+    <WasPausing>1</WasPausing>
+    <CPUThreads>64</CPUThreads>
+    <ISAUsed>AVX512</ISAUsed>
+    <CompilerMajorVersion>17</CompilerMajorVersion>
+    <VectorizedLoopsCount>4</VectorizedLoopsCount>
+    <FullyUnrolledCount>0</FullyUnrolledCount>
+    <TotalCPUTime>237.792</TotalCPUTime>
+    <TotalCPUTimeMKL>0</TotalCPUTimeMKL>
+    <TimeInVectorizedLoops>145.079</TimeInVectorizedLoops>
+    <TimeInVectorizedLoopsMKL>0</TimeInVectorizedLoopsMKL>
+    <TimeInScalarLoops>92.5919</TimeInScalarLoops>
+    <TimeInScalarLoopsMKL>0</TimeInScalarLoopsMKL>
+    <TimeOutsideOfAnyLoop>0.12066</TimeOutsideOfAnyLoop>
+    <TimeOutsideOfAnyLoopMKL>0</TimeOutsideOfAnyLoopMKL>
+    <VectorizationGain>1</VectorizationGain>
+    <ProgramGain>8.8426</ProgramGain>
+    <VectorizedLoopsGain>13.8544</VectorizedLoopsGain>
+    <ProgramSpeedUp>0</ProgramSpeedUp>
+    <EfficiencyConfidence>1</EfficiencyConfidence>
+    <ProgramEfficiency>144.672</ProgramEfficiency>
+    <VectorizedLoopsEfficiency>173.182</VectorizedLoopsEfficiency>
+    <ReferenceEfficiency>12.4983</ReferenceEfficiency>
+    <ReferenceProgramEfficiency>18.9623</ReferenceProgramEfficiency>
+    <TotalGFLOPcount>287.289</TotalGFLOPcount>
+    <TotalGFLOPcountMKL>4.72986e-316</TotalGFLOPcountMKL>
+    <TotalGFLOPS>72.3551</TotalGFLOPS>
+    <TotalGFLOPSMKL>0</TotalGFLOPSMKL>
+    <TotalGFLOPSInVectorizedLoops>0</TotalGFLOPSInVectorizedLoops>
+    <TotalGFLOPSInVectorizedLoopsMKL>0</TotalGFLOPSInVectorizedLoopsMKL>
+    <TotalAI>0.0797018</TotalAI>
+    <FLOPSfeatureOn>1</FLOPSfeatureOn>
+    <HasMKL>0</HasMKL>
+</IntelParallelAdvisorMetrics>
