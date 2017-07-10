@@ -1,0 +1,16 @@
+-r
+/home/AstroVPK/Documents/luDecomp/e000/hs000
+-type
+cpu:stack
+-quiet
+--mrte-mode=auto
+--follow-child
+--strategy=ld-linux.so.2:notrace:notrace,ld-linux-x86-64.so.2:notrace:notrace
+--interval=20
+--data-limit-mb=500
+--stack-stitching
+--stackwalk=offline
+--mrte-type=java
+--bandwidth-config=dram,mcdram,cpu_cache,flop_peak
+--
+/home/AstroVPK/code/lu/luDecomp
