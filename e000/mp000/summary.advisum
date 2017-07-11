@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- <!DOCTYPE IntelParallelAdvisorSummaryCollection SYSTEM  "IntelParallelAdvisorSummaryCollection.dtd"> -->
+
+<IntelParallelAdvisorSummary version="0.1" 
+                             kind="DATAKIND_MAP" >
+
+  <site filename="/home/AstroVPK/code/lu/main.cc"
+        line_no="339"
+        label="loop_site_20" 
+        loop_name="LU_decomp_kij_vec" 
+        is_vectorized="-1">
+    <strides unit="0"
+             const="4"
+             variable="0" />
+  </site>
+
+  <site filename="/home/AstroVPK/code/lu/main.cc"
+        line_no="342"
+        label="loop_site_23" 
+        loop_name="LU_decomp_kij_vec" 
+        is_vectorized="-1">
+    <strides unit="0"
+             const="0"
+             variable="0" />
+  </site>
+
+  <site filename="/home/AstroVPK/code/lu/main.cc"
+        line_no="343"
+        label="loop_site_18" 
+        loop_name="LU_decomp_kij_vec" 
+        is_vectorized="-1">
+    <strides unit="0"
+             const="2"
+             variable="0" />
+  </site>
+
+  <site filename="/home/AstroVPK/code/lu/main.cc"
+        line_no="342"
+        label="loop_site_22" 
+        loop_name="LU_decomp_kij_vec" 
+        is_vectorized="-1">
+    <strides unit="0"
+             const="0"
+             variable="0" />
+  </site>
+
+  <site filename="/home/AstroVPK/code/lu/main.cc"
+        line_no="338"
+        label="loop_site_21" 
+        loop_name="LU_decomp_kij_vec" 
+        is_vectorized="-1">
+    <strides unit="0"
+             const="5"
+             variable="2" />
+  </site>
+
+</IntelParallelAdvisorSummary >
