@@ -1,0 +1,360 @@
+# callstacks file version: 2
+#    rowid |    parent |       rva | loop | system |                                function | binary | instance rva
+         1 |        -1 |      5184 |    0 |      0 |                                  _start | /home/AstroVPK/code/lu/luDecomp | 5184
+         2 |        -1 |      5224 |    0 |      0 |                                  _start | /home/AstroVPK/code/lu/luDecomp | 5184
+         3 |        99 |    138036 |    1 |      1 |     [Loop@0x21a79 in __libc_start_main] | /lib64/libc.so.6 | 137849
+         4 |         3 |      5519 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5424
+         5 |         4 |    477572 |    0 |      1 |           __kmp_api_omp_get_max_threads | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 477520
+         6 |       102 |    568209 |    0 |      1 |_INTERNAL_25_______src_kmp_runtime_cpp_fa8d4e2e::__kmp_do_middle_initialize | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 568172
+         7 |         6 |    168677 |    0 |      1 |               __kmp_affinity_initialize | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 168592
+         8 |         7 |    170463 |    0 |      1 |_INTERNAL_26_______src_kmp_affinity_cpp_4bb3d687::__kmp_aux_affinity_initialize | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 168704
+         9 |       105 |    214591 |    1 |      1 |[Loop at line 1401 in _INTERNAL_26_______src_kmp_affinity_cpp_4bb3d687::__kmp_affinity_create_x2apicid_map] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 214544
+        10 |         9 |    784121 |    0 |      1 |              __kmp_affinity_bind_thread | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 784048
+        11 |       107 |    242126 |    1 |      1 |[Loop at line 267 in KMPNativeAffinity::Mask::zero] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 242111
+        12 |         3 |     37024 |    0 |      1 |                      hbw_posix_memalign | /lib64/libmemkind.so.0 | 36960
+        13 |        12 |     36102 |    0 |      1 |                             func@0x8cb0 | /lib64/libmemkind.so.0 | 36016
+        14 |        13 |     46227 |    0 |      1 |          memkind_hbw_get_mbind_nodemask | /lib64/libmemkind.so.0 | 46192
+        15 |        14 |     52143 |    0 |      1 |                          __pthread_once | /lib64/libpthread.so.0 | 52064
+        16 |       354 |     48178 |    1 |      1 |            [Loop@0xbc00 in func@0xba70] | /lib64/libmemkind.so.0 | 48128
+        17 |        95 |     24697 |    1 |      1 |       [Loop@0x6070 in numa_node_of_cpu] | /lib64/libnuma.so.1 | 24688
+        18 |        17 |     24006 |    0 |      1 |                       numa_node_to_cpus | /lib64/libnuma.so.1 | 23920
+        19 |        97 |     15985 |    1 |      1 |  [Loop@0x3e68 in numa_bitmask_clearall] | /lib64/libnuma.so.1 | 15976
+        20 |       113 |      5698 |    1 |      0 |              [Loop at line 748 in main] | /home/AstroVPK/code/lu/luDecomp | 5637
+        21 |        20 |    376361 |    0 |      1 |                           [OpenMP fork] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 376080
+        22 |       109 |    542700 |    1 |      1 |  [Loop at line 1827 in __kmp_fork_call] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 542492
+        23 |        22 |    740434 |    0 |      1 |                  __kmp_invoke_microtask | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 740288
+        24 |       116 |      7616 |    1 |      0 |[Loop at line 753 in main$omp$parallel_for@750] | /home/AstroVPK/code/lu/luDecomp | 7574
+        25 |       116 |      7597 |    1 |      0 |[Loop at line 753 in main$omp$parallel_for@750] | /home/AstroVPK/code/lu/luDecomp | 7574
+        26 |       116 |      7620 |    1 |      0 |[Loop at line 753 in main$omp$parallel_for@750] | /home/AstroVPK/code/lu/luDecomp | 7574
+        27 |       116 |      7631 |    1 |      0 |[Loop at line 753 in main$omp$parallel_for@750] | /home/AstroVPK/code/lu/luDecomp | 7574
+        28 |       116 |      7609 |    1 |      0 |[Loop at line 753 in main$omp$parallel_for@750] | /home/AstroVPK/code/lu/luDecomp | 7574
+        29 |         3 |      5896 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5424
+        30 |        29 |    376361 |    0 |      1 |                           [OpenMP fork] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 376080
+        31 |       111 |    542700 |    1 |      1 |  [Loop at line 1827 in __kmp_fork_call] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 542492
+        32 |        31 |    740434 |    0 |      1 |                  __kmp_invoke_microtask | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 740288
+        33 |       122 |     56911 |    1 |      0 |[Loop@0x40de4f in __intel_mic_avx512f_memset] | /home/AstroVPK/code/lu/luDecomp | 56911
+        34 |       128 |      6887 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6816
+        35 |       135 |      6827 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6816
+        36 |       142 |      6877 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6816
+        37 |       149 |      6854 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6816
+        38 |       156 |      6844 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6816
+        39 |       163 |      6834 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6816
+        40 |       170 |      6873 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6816
+        41 |       126 |      6751 |    1 |      0 |[Loop at line 371 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6742
+        42 |       179 |      6904 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6816
+        43 |       126 |      6930 |    1 |      0 |[Loop at line 371 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6742
+        44 |       188 |      6907 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6816
+        45 |       195 |      6865 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6816
+        46 |       202 |      6897 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6816
+        47 |       126 |      6939 |    1 |      0 |[Loop at line 371 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6742
+        48 |       126 |      6913 |    1 |      0 |[Loop at line 371 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6742
+        49 |       213 |      6816 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6816
+        50 |       126 |      7032 |    1 |      0 |[Loop at line 371 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6742
+        51 |       223 |      6979 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6954
+        52 |       126 |      6767 |    1 |      0 |[Loop at line 371 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6742
+        53 |       126 |      6760 |    1 |      0 |[Loop at line 371 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6742
+        54 |       234 |      6999 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6954
+        55 |       244 |      7869 |    1 |      0 |[Loop at line 385 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 7862
+        56 |       126 |      6742 |    1 |      0 |[Loop at line 371 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6742
+        57 |       125 |      6577 |    1 |      0 |[Loop at line 369 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6382
+        58 |       255 |      7005 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6954
+        59 |       125 |      6390 |    1 |      0 |[Loop at line 369 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6382
+        60 |       264 |      6954 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6954
+        61 |       126 |      6791 |    1 |      0 |[Loop at line 371 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6742
+        62 |       126 |      6783 |    1 |      0 |[Loop at line 371 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6742
+        63 |       126 |      6802 |    1 |      0 |[Loop at line 371 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6742
+        64 |       126 |      6916 |    1 |      0 |[Loop at line 371 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6742
+        65 |       126 |      7039 |    1 |      0 |[Loop at line 371 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6742
+        66 |       126 |      6777 |    1 |      0 |[Loop at line 371 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6742
+        67 |       126 |      6918 |    1 |      0 |[Loop at line 371 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6742
+        68 |       126 |      6773 |    1 |      0 |[Loop at line 371 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6742
+        69 |       287 |      7876 |    1 |      0 |[Loop at line 385 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 7862
+        70 |       126 |      6945 |    1 |      0 |[Loop at line 371 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6742
+        71 |       126 |      7014 |    1 |      0 |[Loop at line 371 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6742
+        72 |       298 |      7012 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6954
+        73 |       305 |      7883 |    1 |      0 |[Loop at line 385 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 7862
+        74 |       126 |      6922 |    1 |      0 |[Loop at line 371 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6742
+        75 |       314 |      6993 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6954
+        76 |       322 |      6261 |    1 |      0 |[Loop at line 362 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6237
+        77 |       126 |      7025 |    1 |      0 |[Loop at line 371 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6742
+        78 |       322 |      6268 |    1 |      0 |[Loop at line 362 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6237
+        79 |       322 |      6254 |    1 |      0 |[Loop at line 362 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6237
+        80 |       126 |      7042 |    1 |      0 |[Loop at line 371 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6742
+        81 |       333 |      6972 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6954
+        82 |       340 |      7880 |    1 |      0 |[Loop at line 385 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 7862
+        83 |       126 |      6805 |    1 |      0 |[Loop at line 371 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6742
+        84 |       126 |      6909 |    1 |      0 |[Loop at line 371 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6742
+        85 |       322 |      6243 |    1 |      0 |[Loop at line 362 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6237
+        86 |         3 |      8631 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5424
+        87 |        86 |    186500 |    0 |      1 |                            func@0x2d790 | /lib64/libmemkind.so.0 | 186256
+        88 |        87 |    101879 |    0 |      1 |                            func@0x18d80 | /lib64/libmemkind.so.0 | 101760
+        89 |        88 |    141892 |    0 |      1 |                            func@0x228b0 | /lib64/libmemkind.so.0 | 141488
+        90 |       356 |     96762 |    1 |      1 |          [Loop@0x179f0 in func@0x17940] | /lib64/libmemkind.so.0 | 96752
+        91 |        90 |     96444 |    0 |      1 |                            func@0x17845 | /lib64/libmemkind.so.0 | 96325
+        92 |        91 |    142939 |    0 |      1 |                            func@0x22c90 | /lib64/libmemkind.so.0 | 142480
+        93 |        92 |     37619 |    0 |      1 |                             func@0x92e0 | /lib64/libmemkind.so.0 | 37600
+        94 |        93 |    990999 |    0 |      1 |                               __madvise | /lib64/libc.so.6 | 990992
+        95 |        16 |     24688 |    0 |      1 |                        numa_node_of_cpu | /lib64/libnuma.so.1 | 24640
+        96 |        16 |     24697 |    0 |      1 |                        numa_node_of_cpu | /lib64/libnuma.so.1 | 24640
+        97 |        18 |     15976 |    0 |      1 |                   numa_bitmask_clearall | /lib64/libnuma.so.1 | 15952
+        98 |        18 |     15985 |    0 |      1 |                   numa_bitmask_clearall | /lib64/libnuma.so.1 | 15952
+        99 |         2 |    137849 |    0 |      1 |                       __libc_start_main | /lib64/libc.so.6 | 137792
+       100 |         2 |    138036 |    0 |      1 |                       __libc_start_main | /lib64/libc.so.6 | 137792
+       101 |         5 |    568091 |    0 |      1 |                 __kmp_middle_initialize | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 568032
+       102 |       101 |    568172 |    1 |      1 |[Loop at line 6925 in __kmp_middle_initialize] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 568091
+       103 |       101 |    568209 |    1 |      1 |[Loop at line 6925 in __kmp_middle_initialize] | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 568091
+       104 |         5 |    568209 |    0 |      1 |                 __kmp_middle_initialize | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 568032
+       105 |         8 |    214544 |    0 |      1 |_INTERNAL_26_______src_kmp_affinity_cpp_4bb3d687::__kmp_affinity_create_x2apicid_map | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 212816
+       106 |         8 |    214591 |    0 |      1 |_INTERNAL_26_______src_kmp_affinity_cpp_4bb3d687::__kmp_affinity_create_x2apicid_map | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 212816
+       107 |        10 |    242111 |    0 |      1 |           KMPNativeAffinity::Mask::zero | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 242096
+       108 |        10 |    242126 |    0 |      1 |           KMPNativeAffinity::Mask::zero | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 242096
+       109 |        21 |    542492 |    0 |      1 |                         __kmp_fork_call | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 541920
+       110 |        21 |    542700 |    0 |      1 |                         __kmp_fork_call | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 541920
+       111 |        30 |    542492 |    0 |      1 |                         __kmp_fork_call | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 541920
+       112 |        30 |    542700 |    0 |      1 |                         __kmp_fork_call | /opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/libiomp5.so | 541920
+       113 |         3 |      5637 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5424
+       114 |         3 |      5698 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5424
+       115 |        23 |      7563 |    0 |      0 |               main$omp$parallel_for@750 | /home/AstroVPK/code/lu/luDecomp | 7336
+       116 |       115 |      7574 |    1 |      0 |[Loop at line 751 in main$omp$parallel_for@750] | /home/AstroVPK/code/lu/luDecomp | 7563
+       117 |        23 |      7616 |    0 |      0 |               main$omp$parallel_for@750 | /home/AstroVPK/code/lu/luDecomp | 7336
+       118 |        23 |      7597 |    0 |      0 |               main$omp$parallel_for@750 | /home/AstroVPK/code/lu/luDecomp | 7336
+       119 |        23 |      7620 |    0 |      0 |               main$omp$parallel_for@750 | /home/AstroVPK/code/lu/luDecomp | 7336
+       120 |        23 |      7631 |    0 |      0 |               main$omp$parallel_for@750 | /home/AstroVPK/code/lu/luDecomp | 7336
+       121 |        23 |      7609 |    0 |      0 |               main$omp$parallel_for@750 | /home/AstroVPK/code/lu/luDecomp | 7336
+       122 |        32 |     56911 |    0 |      0 |              __intel_mic_avx512f_memset | /home/AstroVPK/code/lu/luDecomp | 56704
+       123 |        32 |     56911 |    0 |      0 |              __intel_mic_avx512f_memset | /home/AstroVPK/code/lu/luDecomp | 56704
+       124 |         3 |      6036 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5424
+       125 |       124 |      6382 |    0 |      0 |                   LU_decomp_kij_vec_reg | /home/AstroVPK/code/lu/luDecomp | 6036
+       126 |       125 |      6742 |    1 |      0 |[Loop at line 369 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6382
+       127 |       126 |      6816 |    1 |      0 |[Loop at line 371 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6742
+       128 |       127 |      6887 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6816
+       129 |       124 |      6887 |    0 |      0 |                   LU_decomp_kij_vec_reg | /home/AstroVPK/code/lu/luDecomp | 6036
+       130 |         3 |      6887 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5424
+       131 |       128 |      6887 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6816
+       132 |       128 |      6979 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6954
+       133 |       128 |      6817 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6816
+       134 |       128 |      6955 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6954
+       135 |       127 |      6827 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6816
+       136 |       124 |      6827 |    0 |      0 |                   LU_decomp_kij_vec_reg | /home/AstroVPK/code/lu/luDecomp | 6036
+       137 |         3 |      6827 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5424
+       138 |       135 |      6887 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6816
+       139 |       135 |      6979 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6954
+       140 |       135 |      6817 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6816
+       141 |       135 |      6955 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6954
+       142 |       127 |      6877 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6816
+       143 |       124 |      6877 |    0 |      0 |                   LU_decomp_kij_vec_reg | /home/AstroVPK/code/lu/luDecomp | 6036
+       144 |         3 |      6877 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5424
+       145 |       142 |      6887 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6816
+       146 |       142 |      6979 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6954
+       147 |       142 |      6817 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6816
+       148 |       142 |      6955 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6954
+       149 |       127 |      6854 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6816
+       150 |       124 |      6854 |    0 |      0 |                   LU_decomp_kij_vec_reg | /home/AstroVPK/code/lu/luDecomp | 6036
+       151 |         3 |      6854 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5424
+       152 |       149 |      6887 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6816
+       153 |       149 |      6979 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6954
+       154 |       149 |      6817 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6816
+       155 |       149 |      6955 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6954
+       156 |       127 |      6844 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6816
+       157 |       124 |      6844 |    0 |      0 |                   LU_decomp_kij_vec_reg | /home/AstroVPK/code/lu/luDecomp | 6036
+       158 |         3 |      6844 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5424
+       159 |       156 |      6887 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6816
+       160 |       156 |      6979 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6954
+       161 |       156 |      6817 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6816
+       162 |       156 |      6955 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6954
+       163 |       127 |      6834 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6816
+       164 |       124 |      6834 |    0 |      0 |                   LU_decomp_kij_vec_reg | /home/AstroVPK/code/lu/luDecomp | 6036
+       165 |         3 |      6834 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5424
+       166 |       163 |      6887 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6816
+       167 |       163 |      6979 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6954
+       168 |       163 |      6817 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6816
+       169 |       163 |      6955 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6954
+       170 |       127 |      6873 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6816
+       171 |       124 |      6873 |    0 |      0 |                   LU_decomp_kij_vec_reg | /home/AstroVPK/code/lu/luDecomp | 6036
+       172 |         3 |      6873 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5424
+       173 |       170 |      6887 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6816
+       174 |       170 |      6979 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6954
+       175 |       170 |      6817 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6816
+       176 |       170 |      6955 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6954
+       177 |       124 |      6751 |    0 |      0 |                   LU_decomp_kij_vec_reg | /home/AstroVPK/code/lu/luDecomp | 6036
+       178 |         3 |      6751 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5424
+       179 |       127 |      6904 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6816
+       180 |       124 |      6904 |    0 |      0 |                   LU_decomp_kij_vec_reg | /home/AstroVPK/code/lu/luDecomp | 6036
+       181 |         3 |      6904 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5424
+       182 |       179 |      6887 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6816
+       183 |       179 |      6979 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6954
+       184 |       179 |      6817 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6816
+       185 |       179 |      6955 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6954
+       186 |       124 |      6930 |    0 |      0 |                   LU_decomp_kij_vec_reg | /home/AstroVPK/code/lu/luDecomp | 6036
+       187 |         3 |      6930 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5424
+       188 |       127 |      6907 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6816
+       189 |       124 |      6907 |    0 |      0 |                   LU_decomp_kij_vec_reg | /home/AstroVPK/code/lu/luDecomp | 6036
+       190 |         3 |      6907 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5424
+       191 |       188 |      6887 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6816
+       192 |       188 |      6979 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6954
+       193 |       188 |      6817 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6816
+       194 |       188 |      6955 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6954
+       195 |       127 |      6865 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6816
+       196 |       124 |      6865 |    0 |      0 |                   LU_decomp_kij_vec_reg | /home/AstroVPK/code/lu/luDecomp | 6036
+       197 |         3 |      6865 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5424
+       198 |       195 |      6887 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6816
+       199 |       195 |      6979 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6954
+       200 |       195 |      6817 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6816
+       201 |       195 |      6955 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6954
+       202 |       127 |      6897 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6816
+       203 |       124 |      6897 |    0 |      0 |                   LU_decomp_kij_vec_reg | /home/AstroVPK/code/lu/luDecomp | 6036
+       204 |         3 |      6897 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5424
+       205 |       202 |      6887 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6816
+       206 |       202 |      6979 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6954
+       207 |       202 |      6817 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6816
+       208 |       202 |      6955 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6954
+       209 |       124 |      6939 |    0 |      0 |                   LU_decomp_kij_vec_reg | /home/AstroVPK/code/lu/luDecomp | 6036
+       210 |         3 |      6939 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5424
+       211 |       124 |      6913 |    0 |      0 |                   LU_decomp_kij_vec_reg | /home/AstroVPK/code/lu/luDecomp | 6036
+       212 |         3 |      6913 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5424
+       213 |       127 |      6816 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6816
+       214 |       124 |      6816 |    0 |      0 |                   LU_decomp_kij_vec_reg | /home/AstroVPK/code/lu/luDecomp | 6036
+       215 |         3 |      6816 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5424
+       216 |       213 |      6887 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6816
+       217 |       213 |      6979 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6954
+       218 |       213 |      6817 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6816
+       219 |       213 |      6955 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6954
+       220 |       124 |      7032 |    0 |      0 |                   LU_decomp_kij_vec_reg | /home/AstroVPK/code/lu/luDecomp | 6036
+       221 |         3 |      7032 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5424
+       222 |       126 |      6954 |    1 |      0 |[Loop at line 371 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6742
+       223 |       222 |      6979 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6816
+       224 |       124 |      6979 |    0 |      0 |                   LU_decomp_kij_vec_reg | /home/AstroVPK/code/lu/luDecomp | 6036
+       225 |         3 |      6979 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5424
+       226 |       223 |      6887 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6816
+       227 |       223 |      6979 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6954
+       228 |       223 |      6817 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6816
+       229 |       223 |      6955 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6954
+       230 |       124 |      6767 |    0 |      0 |                   LU_decomp_kij_vec_reg | /home/AstroVPK/code/lu/luDecomp | 6036
+       231 |         3 |      6767 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5424
+       232 |       124 |      6760 |    0 |      0 |                   LU_decomp_kij_vec_reg | /home/AstroVPK/code/lu/luDecomp | 6036
+       233 |         3 |      6760 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5424
+       234 |       222 |      6999 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6816
+       235 |       124 |      6999 |    0 |      0 |                   LU_decomp_kij_vec_reg | /home/AstroVPK/code/lu/luDecomp | 6036
+       236 |         3 |      6999 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5424
+       237 |       234 |      6887 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6816
+       238 |       234 |      6979 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6954
+       239 |       234 |      6817 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6816
+       240 |       234 |      6955 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6954
+       241 |         3 |      7795 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5424
+       242 |       241 |      6036 |    1 |      0 |              [Loop at line 382 in main] | /home/AstroVPK/code/lu/luDecomp | 7795
+       243 |       242 |      7862 |    0 |      0 |                   LU_decomp_kij_vec_reg | /home/AstroVPK/code/lu/luDecomp | 6036
+       244 |       243 |      7869 |    1 |      0 |[Loop at line 385 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 7862
+       245 |       242 |      7869 |    0 |      0 |                   LU_decomp_kij_vec_reg | /home/AstroVPK/code/lu/luDecomp | 6036
+       246 |       244 |      7869 |    1 |      0 |              [Loop at line 382 in main] | /home/AstroVPK/code/lu/luDecomp | 7795
+       247 |         3 |      7869 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5424
+       248 |       244 |      7869 |    1 |      0 |[Loop at line 385 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 7862
+       249 |       244 |      7863 |    1 |      0 |[Loop at line 385 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 7862
+       250 |       244 |      7935 |    1 |      0 |[Loop at line 385 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 7934
+       251 |       124 |      6742 |    0 |      0 |                   LU_decomp_kij_vec_reg | /home/AstroVPK/code/lu/luDecomp | 6036
+       252 |         3 |      6742 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5424
+       253 |       124 |      6577 |    0 |      0 |                   LU_decomp_kij_vec_reg | /home/AstroVPK/code/lu/luDecomp | 6036
+       254 |         3 |      6577 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5424
+       255 |       222 |      7005 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6816
+       256 |       124 |      7005 |    0 |      0 |                   LU_decomp_kij_vec_reg | /home/AstroVPK/code/lu/luDecomp | 6036
+       257 |         3 |      7005 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5424
+       258 |       255 |      6887 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6816
+       259 |       255 |      6979 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6954
+       260 |       255 |      6817 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6816
+       261 |       255 |      6955 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6954
+       262 |       124 |      6390 |    0 |      0 |                   LU_decomp_kij_vec_reg | /home/AstroVPK/code/lu/luDecomp | 6036
+       263 |         3 |      6390 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5424
+       264 |       222 |      6954 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6816
+       265 |       124 |      6954 |    0 |      0 |                   LU_decomp_kij_vec_reg | /home/AstroVPK/code/lu/luDecomp | 6036
+       266 |         3 |      6954 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5424
+       267 |       264 |      6887 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6816
+       268 |       264 |      6979 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6954
+       269 |       264 |      6817 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6816
+       270 |       264 |      6955 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6954
+       271 |       124 |      6791 |    0 |      0 |                   LU_decomp_kij_vec_reg | /home/AstroVPK/code/lu/luDecomp | 6036
+       272 |         3 |      6791 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5424
+       273 |       124 |      6783 |    0 |      0 |                   LU_decomp_kij_vec_reg | /home/AstroVPK/code/lu/luDecomp | 6036
+       274 |         3 |      6783 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5424
+       275 |       124 |      6802 |    0 |      0 |                   LU_decomp_kij_vec_reg | /home/AstroVPK/code/lu/luDecomp | 6036
+       276 |         3 |      6802 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5424
+       277 |       124 |      6916 |    0 |      0 |                   LU_decomp_kij_vec_reg | /home/AstroVPK/code/lu/luDecomp | 6036
+       278 |         3 |      6916 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5424
+       279 |       124 |      7039 |    0 |      0 |                   LU_decomp_kij_vec_reg | /home/AstroVPK/code/lu/luDecomp | 6036
+       280 |         3 |      7039 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5424
+       281 |       124 |      6777 |    0 |      0 |                   LU_decomp_kij_vec_reg | /home/AstroVPK/code/lu/luDecomp | 6036
+       282 |         3 |      6777 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5424
+       283 |       124 |      6918 |    0 |      0 |                   LU_decomp_kij_vec_reg | /home/AstroVPK/code/lu/luDecomp | 6036
+       284 |         3 |      6918 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5424
+       285 |       124 |      6773 |    0 |      0 |                   LU_decomp_kij_vec_reg | /home/AstroVPK/code/lu/luDecomp | 6036
+       286 |         3 |      6773 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5424
+       287 |       243 |      7876 |    1 |      0 |[Loop at line 385 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 7862
+       288 |       242 |      7876 |    0 |      0 |                   LU_decomp_kij_vec_reg | /home/AstroVPK/code/lu/luDecomp | 6036
+       289 |       287 |      7876 |    1 |      0 |              [Loop at line 382 in main] | /home/AstroVPK/code/lu/luDecomp | 7795
+       290 |         3 |      7876 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5424
+       291 |       287 |      7869 |    1 |      0 |[Loop at line 385 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 7862
+       292 |       287 |      7863 |    1 |      0 |[Loop at line 385 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 7862
+       293 |       287 |      7935 |    1 |      0 |[Loop at line 385 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 7934
+       294 |       124 |      6945 |    0 |      0 |                   LU_decomp_kij_vec_reg | /home/AstroVPK/code/lu/luDecomp | 6036
+       295 |         3 |      6945 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5424
+       296 |       124 |      7014 |    0 |      0 |                   LU_decomp_kij_vec_reg | /home/AstroVPK/code/lu/luDecomp | 6036
+       297 |         3 |      7014 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5424
+       298 |       222 |      7012 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6816
+       299 |       124 |      7012 |    0 |      0 |                   LU_decomp_kij_vec_reg | /home/AstroVPK/code/lu/luDecomp | 6036
+       300 |         3 |      7012 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5424
+       301 |       298 |      6887 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6816
+       302 |       298 |      6979 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6954
+       303 |       298 |      6817 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6816
+       304 |       298 |      6955 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6954
+       305 |       243 |      7883 |    1 |      0 |[Loop at line 385 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 7862
+       306 |       242 |      7883 |    0 |      0 |                   LU_decomp_kij_vec_reg | /home/AstroVPK/code/lu/luDecomp | 6036
+       307 |       305 |      7883 |    1 |      0 |              [Loop at line 382 in main] | /home/AstroVPK/code/lu/luDecomp | 7795
+       308 |         3 |      7883 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5424
+       309 |       305 |      7869 |    1 |      0 |[Loop at line 385 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 7862
+       310 |       305 |      7863 |    1 |      0 |[Loop at line 385 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 7862
+       311 |       305 |      7935 |    1 |      0 |[Loop at line 385 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 7934
+       312 |       124 |      6922 |    0 |      0 |                   LU_decomp_kij_vec_reg | /home/AstroVPK/code/lu/luDecomp | 6036
+       313 |         3 |      6922 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5424
+       314 |       222 |      6993 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6816
+       315 |       124 |      6993 |    0 |      0 |                   LU_decomp_kij_vec_reg | /home/AstroVPK/code/lu/luDecomp | 6036
+       316 |         3 |      6993 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5424
+       317 |       314 |      6887 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6816
+       318 |       314 |      6979 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6954
+       319 |       314 |      6817 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6816
+       320 |       314 |      6955 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6954
+       321 |       124 |      6231 |    0 |      0 |                   LU_decomp_kij_vec_reg | /home/AstroVPK/code/lu/luDecomp | 6036
+       322 |       321 |      6237 |    1 |      0 |[Loop at line 359 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6231
+       323 |       124 |      6261 |    0 |      0 |                   LU_decomp_kij_vec_reg | /home/AstroVPK/code/lu/luDecomp | 6036
+       324 |         3 |      6261 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5424
+       325 |       124 |      7025 |    0 |      0 |                   LU_decomp_kij_vec_reg | /home/AstroVPK/code/lu/luDecomp | 6036
+       326 |         3 |      7025 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5424
+       327 |       124 |      6268 |    0 |      0 |                   LU_decomp_kij_vec_reg | /home/AstroVPK/code/lu/luDecomp | 6036
+       328 |         3 |      6268 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5424
+       329 |       124 |      6254 |    0 |      0 |                   LU_decomp_kij_vec_reg | /home/AstroVPK/code/lu/luDecomp | 6036
+       330 |         3 |      6254 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5424
+       331 |       124 |      7042 |    0 |      0 |                   LU_decomp_kij_vec_reg | /home/AstroVPK/code/lu/luDecomp | 6036
+       332 |         3 |      7042 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5424
+       333 |       222 |      6972 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6816
+       334 |       124 |      6972 |    0 |      0 |                   LU_decomp_kij_vec_reg | /home/AstroVPK/code/lu/luDecomp | 6036
+       335 |         3 |      6972 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5424
+       336 |       333 |      6887 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6816
+       337 |       333 |      6979 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6954
+       338 |       333 |      6817 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6816
+       339 |       333 |      6955 |    1 |      0 |[Loop at line 376 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 6954
+       340 |       243 |      7880 |    1 |      0 |[Loop at line 385 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 7862
+       341 |       242 |      7880 |    0 |      0 |                   LU_decomp_kij_vec_reg | /home/AstroVPK/code/lu/luDecomp | 6036
+       342 |       340 |      7880 |    1 |      0 |              [Loop at line 382 in main] | /home/AstroVPK/code/lu/luDecomp | 7795
+       343 |         3 |      7880 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5424
+       344 |       340 |      7869 |    1 |      0 |[Loop at line 385 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 7862
+       345 |       340 |      7863 |    1 |      0 |[Loop at line 385 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 7862
+       346 |       340 |      7935 |    1 |      0 |[Loop at line 385 in LU_decomp_kij_vec_reg] | /home/AstroVPK/code/lu/luDecomp | 7934
+       347 |       124 |      6805 |    0 |      0 |                   LU_decomp_kij_vec_reg | /home/AstroVPK/code/lu/luDecomp | 6036
+       348 |         3 |      6805 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5424
+       349 |       124 |      6909 |    0 |      0 |                   LU_decomp_kij_vec_reg | /home/AstroVPK/code/lu/luDecomp | 6036
+       350 |         3 |      6909 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5424
+       351 |       124 |      6243 |    0 |      0 |                   LU_decomp_kij_vec_reg | /home/AstroVPK/code/lu/luDecomp | 6036
+       352 |         3 |      6243 |    0 |      0 |                                    main | /home/AstroVPK/code/lu/luDecomp | 5424
+       353 |        15 |     48080 |    0 |      1 |                             func@0xba70 | /lib64/libmemkind.so.0 | 47728
+       354 |       353 |     48128 |    1 |      1 |            [Loop@0xbbd0 in func@0xba70] | /lib64/libmemkind.so.0 | 48080
+       355 |        15 |     48178 |    0 |      1 |                             func@0xba70 | /lib64/libmemkind.so.0 | 47728
+       356 |        89 |     96752 |    0 |      1 |                            func@0x17940 | /lib64/libmemkind.so.0 | 96576
+       357 |        89 |     96762 |    0 |      1 |                            func@0x17940 | /lib64/libmemkind.so.0 | 96576
+       358 |        -1 |         0 |    0 |      0 |                [Unknown stack frame(s)] | n/a | 0
