@@ -2,7 +2,7 @@
 
 <IntelParallelAdvisorMetrics version="3.0">
     <ElapsedTime>0.637143</ElapsedTime>
-    <ElapsedTimeMKL>5.11435e-316</ElapsedTimeMKL>
+    <ElapsedTimeMKL>1.50476e-316</ElapsedTimeMKL>
     <PausedTime>0.000903271</PausedTime>
     <WasPausing>1</WasPausing>
     <CPUThreads>1</CPUThreads>
@@ -28,7 +28,7 @@
     <ReferenceEfficiency>12.5</ReferenceEfficiency>
     <ReferenceProgramEfficiency>17.6477</ReferenceProgramEfficiency>
     <TotalGFLOPcount>1.3931</TotalGFLOPcount>
-    <TotalGFLOPcountMKL>3.91403e-317</TotalGFLOPcountMKL>
+    <TotalGFLOPcountMKL>1.83694e-316</TotalGFLOPcountMKL>
     <TotalGFLOPS>2.18648</TotalGFLOPS>
     <TotalGFLOPSMKL>0</TotalGFLOPSMKL>
     <TotalGFLOPSInVectorizedLoops>0</TotalGFLOPSInVectorizedLoops>
