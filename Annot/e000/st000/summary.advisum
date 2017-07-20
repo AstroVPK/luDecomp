@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- <!DOCTYPE IntelParallelAdvisorSummaryCollection SYSTEM  "IntelParallelAdvisorSummaryCollection.dtd"> -->
+
+<IntelParallelAdvisorSummary version="0.1" 
+                             kind="DATAKIND_SUITABILITY" 
+                             duration_total="2.880692E+01"
+                             num_processors="8" 
+                             num_mic_threads="128" 
+                             threading_paradigm="tbb" 
+                             target_system="cpu" 
+                             program_max_gain="5.610127E+00" >
+  <site filename="/home/AstroVPK/code/lu/main.cc" 
+        line_no="403" 
+        label="Init">
+    <suitability duration_total="4.279672E-02" 
+                 num_instances="100">
+      <estimated_speedup>
+       <scaling threading_paradigm="tbb" 
+                site_overhead="false" 
+                task_overhead="false" 
+                task_chunking="false" 
+                lock_overhead="false" 
+                lock_contention="false" >
+          <scale cpu="8" speedup="1.051306E-02" />
+        </scaling>
+      </estimated_speedup>
+    </suitability>
+  </site>
+  <site filename="/home/AstroVPK/code/lu/main.cc" 
+        line_no="415" 
+        label="Decompose">
+    <suitability duration_total="2.830292E+01" 
+                 num_instances="100">
+      <estimated_speedup>
+       <scaling threading_paradigm="tbb" 
+                site_overhead="false" 
+                task_overhead="false" 
+                task_chunking="false" 
+                lock_overhead="false" 
+                lock_contention="false" >
+          <scale cpu="8" speedup="4.685439E+00" />
+        </scaling>
+      </estimated_speedup>
+    </suitability>
+  </site>
+  <site filename="/home/AstroVPK/code/lu/main.cc" 
+        line_no="432" 
+        label="Copy">
+    <suitability duration_total="3.864656E-02" 
+                 num_instances="100">
+      <estimated_speedup>
+       <scaling threading_paradigm="tbb" 
+                site_overhead="false" 
+                task_overhead="false" 
+                task_chunking="false" 
+                lock_overhead="false" 
+                lock_contention="false" >
+          <scale cpu="8" speedup="1.656431E-02" />
+        </scaling>
+      </estimated_speedup>
+    </suitability>
+  </site>
+  <task filename="/home/AstroVPK/code/lu/main.cc" 
+        line_no="405" 
+        label="initLoop" 
+        duration_total="3.780172E-02" 
+        num_instances="25600" />
+  <task filename="/home/AstroVPK/code/lu/main.cc" 
+        line_no="420" 
+        label="iLoop" 
+        duration_total="2.583261E+01" 
+        num_instances="3264000" />
+  <task filename="/home/AstroVPK/code/lu/main.cc" 
+        line_no="434" 
+        label="copyLoop" 
+        duration_total="3.402135E-02" 
+        num_instances="25600" />
+</IntelParallelAdvisorSummary >
