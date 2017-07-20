@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- <!DOCTYPE IntelParallelAdvisorSummaryCollection SYSTEM  "IntelParallelAdvisorSummaryCollection.dtd"> -->
+
+<IntelParallelAdvisorSummary version="0.1" 
+                             kind="DATAKIND_SUITABILITY" 
+                             duration_total="3.008715E+01"
+                             num_processors="8" 
+                             num_mic_threads="128" 
+                             threading_paradigm="tbb" 
+                             target_system="cpu" 
+                             program_max_gain="3.765624E+00" >
+  <site filename="/home/AstroVPK/code/lu/main.cc" 
+        line_no="455" 
+        label="All">
+    <suitability duration_total="2.976224E+01" 
+                 num_instances="100">
+      <estimated_speedup>
+       <scaling threading_paradigm="tbb" 
+                site_overhead="false" 
+                task_overhead="false" 
+                task_chunking="false" 
+                lock_overhead="false" 
+                lock_contention="false" >
+          <scale cpu="8" speedup="7.665135E+00" />
+        </scaling>
+      </estimated_speedup>
+    </suitability>
+  </site>
+  <task filename="/home/AstroVPK/code/lu/main.cc" 
+        line_no="457" 
+        label="initLoop" 
+        duration_total="2.040649E-01" 
+        num_instances="25600" />
+  <task filename="/home/AstroVPK/code/lu/main.cc" 
+        line_no="471" 
+        label="iLoop" 
+        duration_total="2.603623E+01" 
+        num_instances="3264000" />
+  <task filename="/home/AstroVPK/code/lu/main.cc" 
+        line_no="484" 
+        label="copyLoop" 
+        duration_total="2.048849E-01" 
+        num_instances="25600" />
+</IntelParallelAdvisorSummary >
