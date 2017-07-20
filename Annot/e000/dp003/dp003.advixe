@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
  <rdmgr>
-  <timestamp type="u64_t">1500575593</timestamp>
+  <timestamp type="u64_t">1500576004</timestamp>
   <hostname type="string">c012-n013</hostname>
   <os type="string">linux</os>
   <product type="string">Intel® Advisor 2017 Update 3</product>
@@ -13,9 +13,9 @@
   <CPUStepping type="s32_t">1</CPUStepping>
   <CPUBrandName type="string">Intel(R) Xeon Phi(TM) CPU 7210 @ 1.30GHz</CPUBrandName>
   <isa type="string">avx2</isa>
-  <collectionTimeBegin type="u64_t">1500575593</collectionTimeBegin>
-  <collectionTimeEnd type="u64_t">1500575691</collectionTimeEnd>
-  <finalizationTimeBegin type="u64_t">1500575691</finalizationTimeBegin>
-  <finalizationTimeEnd type="u64_t">1500575859</finalizationTimeEnd>
+  <collectionTimeBegin type="u64_t">1500576004</collectionTimeBegin>
+  <collectionTimeEnd type="u64_t">1500576081</collectionTimeEnd>
+  <finalizationTimeBegin type="u64_t">1500576081</finalizationTimeBegin>
+  <finalizationTimeEnd type="u64_t">1500576232</finalizationTimeEnd>
  </rdmgr>
 </root>
