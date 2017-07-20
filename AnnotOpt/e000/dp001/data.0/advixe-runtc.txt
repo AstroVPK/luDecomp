@@ -1,0 +1,18 @@
+
+=== Start: [2017/07/20 11:21:06] === 
+Analysis started...
+Result file: /home/AstroVPK/Documents/luDecomp/AnnotOpt/e000/dp001/dp001.advixe 
+Found target process /home/AstroVPK/code/lu/luDecomp (PID = 29768). Analysis started... 
+Loaded module: /home/AstroVPK/code/lu/luDecomp. 
+Loaded module: /lib64/ld-linux-x86-64.so.2. 
+Loaded module: [vdso]. 
+Warning: Detected fatal signal in the application. See result for details. 
+Unloaded module: /home/AstroVPK/code/lu/luDecomp. 
+Unloaded module: /lib64/ld-linux-x86-64.so.2. 
+Unloaded module: [vdso]. 
+Process /home/AstroVPK/code/lu/luDecomp (PID = 29768) has terminated. 
+Warning: No site annotations were executed, so no Dependencies issues (problems and messages) can be found. 
+Application exit code: 130 
+Result file: /home/AstroVPK/Documents/luDecomp/AnnotOpt/e000/dp001/dp001.advixe 
+Analysis completed
+=== End: [2017/07/20 11:21:10] === 

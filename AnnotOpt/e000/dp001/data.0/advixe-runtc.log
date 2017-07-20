@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<log version="1.0" tool="runtool">
+
+<msg id="1" tool="runtool">
+  <type>log-start</type>
+  <arg>2017/07/20 11:21:06</arg>
+</msg>
+<msg id="2" tool="runtool">
+  <type>collector-starts</type>
+</msg>
+<msg id="3" tool="runtool">
+  <type>marker-file</type>
+  <arg>/home/AstroVPK/Documents/luDecomp/AnnotOpt/e000/dp001/dp001.advixe</arg>
+</msg>
+<msg id="4" tool="tc">
+  <type>START</type>
+  <severity>INFO</severity>
+  <timestamp>Thu Jul 20 11:21:06 2017</timestamp>
+</msg>
+<msg id="5" tool="tc">
+  <type>EXEC_OF_INTEREST</type>
+  <arg>/home/AstroVPK/code/lu/luDecomp</arg>
+  <arg>29768</arg>
+  <severity>INFO</severity>
+  <timestamp>Thu Jul 20 11:21:06 2017</timestamp>
+</msg>
+<msg id="6" tool="tc">
+  <type>LOAD_MODULE</type>
+  <arg>/home/AstroVPK/code/lu/luDecomp</arg>
+  <arg>0x400000</arg>
+  <arg>0x6169df</arg>
+  <severity>INFO</severity>
+  <timestamp>Thu Jul 20 11:21:06 2017</timestamp>
+</msg>
+<msg id="7" tool="tc">
+  <type>LOAD_MODULE</type>
+  <arg>/lib64/ld-linux-x86-64.so.2</arg>
+  <arg>0x7f9641011000</arg>
+  <arg>0x7f964123314f</arg>
+  <severity>INFO</severity>
+  <timestamp>Thu Jul 20 11:21:06 2017</timestamp>
+</msg>
+<msg id="8" tool="tc">
+  <type>LOAD_MODULE</type>
+  <arg>[vdso]</arg>
+  <arg>0x7ffc24869000</arg>
+  <arg>0x7ffc24869fdc</arg>
+  <severity>INFO</severity>
+  <timestamp>Thu Jul 20 11:21:06 2017</timestamp>
+</msg>
+<msg id="9" tool="tc">
+  <type>FATAL_SIGNAL</type>
+  <severity>WARNING</severity>
+  <timestamp>Thu Jul 20 11:21:07 2017</timestamp>
+</msg>
+<msg id="10" tool="tc">
+  <type>UNLOAD_MODULE</type>
+  <arg>/home/AstroVPK/code/lu/luDecomp</arg>
+  <severity>INFO</severity>
+  <timestamp>Thu Jul 20 11:21:07 2017</timestamp>
+</msg>
+<msg id="11" tool="tc">
+  <type>UNLOAD_MODULE</type>
+  <arg>/lib64/ld-linux-x86-64.so.2</arg>
+  <severity>INFO</severity>
+  <timestamp>Thu Jul 20 11:21:07 2017</timestamp>
+</msg>
+<msg id="12" tool="tc">
+  <type>UNLOAD_MODULE</type>
+  <arg>[vdso]</arg>
+  <severity>INFO</severity>
+  <timestamp>Thu Jul 20 11:21:07 2017</timestamp>
+</msg>
+<msg id="13" tool="tc">
+  <type>PROCESS_TERMINATE</type>
+  <arg>/home/AstroVPK/code/lu/luDecomp</arg>
+  <arg>29768</arg>
+  <severity>INFO</severity>
+  <timestamp>Thu Jul 20 11:21:07 2017</timestamp>
+</msg>
+<msg id="14" tool="tc">
+  <type>NO_ANNOTATIONS</type>
+  <severity>WARNING</severity>
+  <timestamp>Thu Jul 20 11:21:07 2017</timestamp>
+</msg>
+<msg id="15" tool="tc">
+  <type>ANALYSIS_COMPLETE</type>
+  <severity>INFO</severity>
+  <timestamp>Thu Jul 20 11:21:07 2017</timestamp>
+</msg>
+<msg id="16" tool="tc">
+  <type>STOP</type>
+  <severity>INFO</severity>
+  <timestamp>Thu Jul 20 11:21:07 2017</timestamp>
+</msg>
+<msg id="17" tool="runtool">
+  <type>app-exit-code</type>
+  <arg>130</arg>
+</msg>
+<msg id="18" tool="runtool">
+  <type>marker-file</type>
+  <arg>/home/AstroVPK/Documents/luDecomp/AnnotOpt/e000/dp001/dp001.advixe</arg>
+</msg>
+<msg id="19" tool="runtool">
+  <type>collector-done</type>
+</msg>
+<msg id="20" tool="runtool">
+  <type>log-end</type>
+  <arg>2017/07/20 11:21:10</arg>
+</msg>
+
+</log>
+
